@@ -35,6 +35,8 @@ The metrics we will use for this project is root mean squared error (RMSE). The 
 
 RMSE is defined as:
 
+<img src="Images-and-plots/Loss_Func.png">
+
 where y-hat is the natural log of the predicted revenue for a customer and y is the natural log of the actual summed revenue value plus one as seen below.
 
 **Model Pipeline Steps**
