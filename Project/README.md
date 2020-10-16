@@ -10,17 +10,17 @@ Online Store Customer Revenue Prediction
 https://www.kaggle.com/c/ga-customer-revenue-prediction
 
 +	Problem Statement:
-++	The 80/20 rule has proven true for many businesses–only a small percentage of customers produce most of the revenue. As such, marketing teams are challenged to make appropriate investments in promotional strategies.
-++	In this competition, you’re challenged to analyze a Google Merchandise Store (also known as GStore, where Google swag is sold) customer dataset to predict revenue per customer. Hopefully, the outcome will be more actionable operational changes and a better use of marketing budgets for those companies who choose to use data analysis on top of GA data.
+	+	The 80/20 rule has proven true for many businesses–only a small percentage of customers produce most of the revenue. As such, marketing teams are challenged to make appropriate investments in promotional strategies.
+	+	In this competition, you’re challenged to analyze a Google Merchandise Store (also known as GStore, where Google swag is sold) customer dataset to predict revenue per customer. Hopefully, the outcome will be more actionable operational changes and a better use of marketing budgets for those companies who choose to use data analysis on top of GA data.
 
 +	Dataset Explanation:
-++	Two datasets are provided (train.csv and test.csv)
-++	Train.csv  User transactions from August 1st, 2016 to August 1st, 2017
-++	Test.csv   User transactions from August 2nd, 2017 to April 30th, 2018
+	+	Two datasets are provided (train.csv and test.csv)
+	+	Train.csv  User transactions from August 1st, 2016 to August 1st, 2017
+	+	Test.csv   User transactions from August 2nd, 2017 to April 30th, 2018
 
 +	Team Members: 
-++	Anantha Janakiraman – Machine Learning Engineer
-++	Balaji Dhamodharan – Data Scientist - Github Repo Owner
+	+	Anantha Janakiraman – Machine Learning Engineer
+	+	Balaji Dhamodharan – Data Scientist - Github Repo Owner
 
 **Problem Setting and Model Development**
 
