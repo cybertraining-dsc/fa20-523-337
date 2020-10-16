@@ -40,10 +40,10 @@ where y-hat is the natural log of the predicted revenue for a customer and y is 
 **Model Pipeline Steps**
 
 The  high-level representation of the implementation steps is shown below. The below steps are subject to change as we understand more about the data and various pre-processing, feature engineering or model development steps may vary accordingly. 
- 
-**Crisp Methodology**
 
-We are planning to implement the project using Crisp Methodology. The CRISP Methodology steps are shown below:
+<img src="Images-and-plots/Plot_Part1.png">
+
+
 
 
 
