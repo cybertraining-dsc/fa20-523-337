@@ -1,10 +1,13 @@
+# Online Store Customer Revenue Prediction
 
-**Project Title:**
+- [ ] please use our published template. We posted it in piazza
+- [ ] please review the markdown guidlines, just because you can see it in github, does not mean its proper markdown
+- [ ] please use refernces as demonstrated in our template
+- [ ] please do not use : in section titles, section titles do not have :
+- [ ] please do not use html raw tags as posted in piazza
+- [ ] please review piazza posts
 
-Online Store Customer Revenue Prediction
-
-
-**Project Abstract:**
+**Abstract**
 
 +	The dataset for this project is obtained from Kaggle. The link to the dataset is provided below:
 https://www.kaggle.com/c/ga-customer-revenue-prediction
