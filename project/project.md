@@ -60,8 +60,8 @@ The  high-level representation of the implementation steps is shown below. The b
 
 ## 6. References
 
-[^1]:https://www.kaggle.com/c/ga-customer-revenue-prediction/rules
-[^2]:https://www.kaggle.com/sudalairajkumar/simple-exploration-baseline-ga-customer-revenue
+[^1]: https://www.kaggle.com/c/ga-customer-revenue-prediction/rules
+[^2]: https://www.kaggle.com/sudalairajkumar/simple-exploration-baseline-ga-customer-revenue
 
 
 
