@@ -1,6 +1,9 @@
-#Online Store Customer Revenue Prediction#
+# Online Store Customer Revenue Prediction
 
-Balaji Dhamodharan, bdhamodh@iu.edu, [fa20-523-337](https://github.com/cybertraining-dsc/fa20-523-337),[Edit](https://github.com/cybertraining-dsc/fa20-523-337/edit/master/project/project.md)
+Balaji Dhamodharan, bdhamodh@iu.edu, fa20-523-337
+Anantha Janakiraman, bdhamodh@iu.edu, fa20-523-337
+
+[Edit](https://github.com/cybertraining-dsc/fa20-523-337/edit/master/project/project.md)
 
 {{% pageinfo %}}
 
