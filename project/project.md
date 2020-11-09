@@ -57,14 +57,16 @@ The  high-level representation of the implementation steps is shown below. The b
 +	Data Pre-Processing
 +	Feature Engineering
 +	Build the data pipeline
-+	Build Models - Linear Regression Model
-+	Build Models - Random Forest Regressor
-+	Build Models - XGBoost Regressor
-+	Build Models - XGBoost Regressor
-+	Build Models - LightGBM Regressor
-+	Build Models - Lasso Regression
-+	Build Models - Ridge Regressor
-+	Build Models - Keras Deep Learning Model
++	Model Algorithms and Optimization Methods
+We are planning to explore different algorithms as shown below:
+	+	Linear Regression Model
+	+	Random Forest Regressor
+	+	XGBoost Regressor
+	+	XGBoost Regressor
+	+	LightGBM Regressor
+	+	Lasso Regression
+	+	Ridge Regressor
+	+	Keras Deep Learning Model
 +	Feature Importance
 	+	Random Forest Regressor
 	+	Xgboost Regressor
