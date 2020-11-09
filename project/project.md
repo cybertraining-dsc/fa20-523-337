@@ -52,11 +52,12 @@ where y-hat is the natural log of the predicted revenue for a customer and y is 
 The  high-level representation of the implementation steps is shown below. The below steps are subject to change as we understand more about the data and various pre-processing, feature engineering or model development steps may vary accordingly. 
 
 <img src="Images-and-plots/Plot_Part1.png">
-+ 	Data Exploration
-+ 	Data Pre-Processing
-+ 	Feature Engineering
-+ 	Build the data pipeline
-+ 	Build Models
+
++	Data Exploration
++	Data Pre-Processing
++	Feature Engineering
++	Build the data pipeline
++	Build Models
 
 ## 5. Technologies
 + 	Python
