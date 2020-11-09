@@ -12,9 +12,9 @@ The 80/20 rule has proven true for many businesses–only a small percentage of 
 
 Contents
 
-{{< table_of_contents >}}
+{{% table_of_contents %}}
 
-{{% /pageinfo %}}
+{{% pageinfo %}}
 
 **Keywords:** ecommerce,  regression analysis, big data
 
