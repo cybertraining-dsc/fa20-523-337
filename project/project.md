@@ -1,5 +1,7 @@
 # Online Store Customer Revenue Prediction
 
+- [ ] please follow our template
+
 Balaji Dhamodharan, bdhamodh@iu.edu, fa20-523-337
 Anantha Janakiraman, ajanakir@iu.edu, fa20-523-337
 
@@ -14,7 +16,7 @@ Contents
 
 {{% table_of_contents %}}
 
-{{% pageinfo %}}
+{{% /pageinfo %}}
 
 **Keywords:** ecommerce,  regression analysis, big data
 
