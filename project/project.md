@@ -1,5 +1,7 @@
 # Online Store Customer Revenue Prediction
 
+[![Check Report](https://github.com/cybertraining-dsc/fa20-523-337/workflows/Check%20Report/badge.svg)](https://github.com/cybertraining-dsc/fa20-523-337/actions)
+
 - [ ] please follow our template
 
 Balaji Dhamodharan, bdhamodh@iu.edu, fa20-523-337
