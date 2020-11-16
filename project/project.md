@@ -46,38 +46,44 @@ RMSE is defined as:
 where y-hat is the natural log of the predicted revenue for a customer and y is the natural log of the actual summed revenue value plus one as seen below.
 
 
-## 4. Methodology
+## 3. Machine Learning Algorithm and Implementation
 
 We used CRISP-DM process methodology for this project. The  high-level representation of the implementation steps explained in detail below:
 
-+	Data Exploration
-+	Data Pre-Processing
-+	Feature Engineering
-+	Build the data pipeline
-+	Model Algorithms and Optimization Methods
+- Data Exploration
+
+- Data Pre-Processing
+
+- Feature Engineering
+
+- Build the data pipeline
+
+- Model Algorithms and Optimization Methods
+
 We are planning to explore different algorithms as shown below:
-	+	Linear Regression Model
-	+	Random Forest Regressor
-	+	XGBoost Regressor
-	+	XGBoost Regressor
-	+	LightGBM Regressor
-	+	Lasso Regression
-	+	Ridge Regressor
-	+	Keras Deep Learning Model
-+	Feature Importance
-	+	Random Forest Regressor
-	+	Xgboost Regressor
-	+	LightGBM Regressor
-	+	Lasso Regressor Regressor
-	+	Ridge Regressor
-+	Significance Test
-+	Results Validation
-+	Summary
+
+- Linear Regression Model
+
+- XGBoost Regressor
+
+- LightGBM Regressor
+
+- Lasso Regression
+
+- Ridge Regressor
+
+- Feature Importance
+	- Xgboost Regressor
+	- LightGBM Regressor
+	- Lasso Regressor Regressor
+	- Ridge Regressor
+- Results Validation
 
 ## 5. Technologies
-+ 	Python
-+	Jupyter Notebook (Google Colab)
-+ 	Packages: Pandas, Numpy, Matplotlib, sklearn
+
+- Python
+- Jupyter Notebook (Google Colab)
+- Packages: Pandas, Numpy, Matplotlib, sklearn
 
 ## 6. Project Timeline
 
