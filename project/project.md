@@ -18,7 +18,7 @@ The 80/20 rule has proven true for many businesses–only a small percentage of 
 
 Contents
 
-{{% table_of_contents %}}
+{{< table_of_contents >}}
 
 {{% /pageinfo %}}
 
@@ -88,10 +88,37 @@ We are planning to explore different algorithms as shown below:
 +	Jupyter Notebook (Google Colab)
 + 	Packages: Pandas, Numpy, Matplotlib, sklearn
 
-## 6. References
+## 6. Project Timeline
 
-1. https://www.kaggle.com/c/ga-customer-revenue-prediction/rules
-2. https://www.kaggle.com/sudalairajkumar/simple-exploration-baseline-ga-customer-revenue
+### October 16
+
+- Explore the data set
+- Explore ML Framework
+- Perform Basic EDA
+
+### November 2
+
+- The dataset was large. Identified the problem was a regression problem
+- Explored different variables and their distributions
+- Build base line model
+
+### November 9
+
+- Build ML models using LR, XGBoost, LightGBM
+- Review Results
+
+### November 16
+- Report and document findings
+
+## 7. References
+
+[^1]: Kaggle Competition, 2019, Predict the Online Store Revenue [online] Available at: <https://www.kaggle.com/c/ga-customer-revenue-prediction/rules> [Accessed 21 October 2020]
+
+[^2]: Kaggle Competition, 2019,  Simple Exploration Baseline, [online] Available at: <https://www.kaggle.com/sudalairajkumar/simple-exploration-baseline-ga-customer-revenue> [Accessed 21 October 2020] 
+
+[^3]: Towards DataScience, 2020,  Sweetviz- Powerful EDA, [online] Available at: <https://towardsdatascience.com/powerful-eda-exploratory-data-analysis-in-just-two-lines-of-code-using-sweetviz-6c943d32f34> [Accessed 21 October 2020] 
+
+
 
 
 
