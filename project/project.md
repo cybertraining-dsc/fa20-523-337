@@ -57,8 +57,8 @@ The data was obtained from Kaggle Competition. Please find the details of the da
 - Load Data
 
 The data we obtained from Kaggle was over 2.6 GB (for Train and Test). As the size of the dataset was large, I have created a bucket in Google Store where the data can be downloaded. The URL is provided here for your reference:
-	- <https://storage.googleapis.com/gstoretrain/train.csv>
-	- <https://storage.googleapis.com/gstoretrain/test.csv>
+-  <https://storage.googleapis.com/gstoretrain/train.csv>
+-  <https://storage.googleapis.com/gstoretrain/test.csv>
 
 - Data Exploration
 The dataset we obtained contained 54 Independent Variable and 1 Dependent variable. The Dependent Variable is "totals.transactionRevenue". The end goal of this project is to predict the revenue of the Online Store Customer as close as possible.
