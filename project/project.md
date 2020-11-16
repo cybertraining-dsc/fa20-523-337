@@ -9,7 +9,7 @@
 Balaji Dhamodharan, bdhamodh@iu.edu, fa20-523-337
 Anantha Janakiraman, ajanakir@iu.edu, fa20-523-337
 
-[Edit](https://github.com/cybertraining-dsc/fa20-523-337/blob/master/project/project.md)
+[Edit](https://github.com/cybertraining-dsc/fa20-523-337/edit/master/project/project.md)
 
 {{% pageinfo %}}
 
