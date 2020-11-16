@@ -30,34 +30,25 @@ Our objective is to predict the natural log of total revenue per customer which 
 
 ## 2. Datasets
 
-The dataset for this project is obtained from Kaggle. The link to the dataset is provided below:
-https://www.kaggle.com/c/ga-customer-revenue-prediction
-+	Dataset Explanation:
-	+	Two datasets are provided (train.csv and test.csv)
-	+	Train.csv  User transactions from August 1st, 2016 to August 1st, 2017
-	+	Test.csv   User transactions from August 2nd, 2017 to April 30th, 2018
+- <https://www.kaggle.com/c/ga-customer-revenue-prediction>
 
+The dataset we used is from the Kaggle Competition. The dataset contains two csv files.
+- Train.csv, User transactions from August 1st, 2016 to August 1st, 2017, 903.6K records
+- Test.csv, User transactions from August 2nd, 2017 to April 30th, 2018, 804.6K records
 
-
-+	The training dataset contains 872214 records and considering the size of the training dataset, we will plan to use mini-batch or stochastic gradient descent methods to obtain optimized estimates of the coefficients for our linear function that best describes the input variables. After cleaning and pre-processing the data, we will build a basic linear regression model using basic parameter setting and based on outcome of this initial model, we will perform further experimentation to tune the hyper-parameters including regularization and additional feature engineering to derive more features from the provided input data to improve the parameter estimates for our model and reduce the error.
-
-
-## 3. Metrics
 
 The metrics we will use for this project is root mean squared error (RMSE). The root mean squared error function forms our objective/cost function which will be minimized to estimate the optimal parameters for our linear function through Gradient Descent. We will conduct multiple experiments to obtain convergence using different “number of iterations” value and other hyper-parameters (e.g. learning rate).
 
 RMSE is defined as:
 
-<img src="Images-and-plots/Loss_Func.png">
+![Figure 2.1](https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-337/main/project/Images-and-plots/Loss_Func.png)  
 
 where y-hat is the natural log of the predicted revenue for a customer and y is the natural log of the actual summed revenue value plus one as seen below.
 
 
 ## 4. Methodology
 
-The  high-level representation of the implementation steps is shown below. The below steps are subject to change as we understand more about the data and various pre-processing, feature engineering or model development steps may vary accordingly. 
-
-<img src="Images-and-plots/Plot_Part1.png">
+We used CRISP-DM process methodology for this project. The  high-level representation of the implementation steps explained in detail below:
 
 +	Data Exploration
 +	Data Pre-Processing
