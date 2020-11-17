@@ -124,7 +124,7 @@ The Target Variable is totals.transactionRevenue has the transaction value of ea
 	
 - Data Pre-Processing
 
-We identified some of the columns contained null values including the target variable. The variables such as "totals_newVisits", "totals_bounces", "trafficSource_adwordsClickInfo_page", "trafficSource_isTrueDirect", "totals_bounces", "totals_newVisits" had missing values. We filled the missing values with "Zeroes". 
+Data Pre-Processing is an important step to build a Machine Learning Model. The data pre-processing step typically consists of data cleaning, transformation and feature selection, so only the most cleaner and accurate data is fed to the models. The dataset we obtained for this project was noticed to contain several data issues such as missing values, less to no variance (zero variance) in the data and also identified the target variable not having random distribution.  The variables such as "totals_newVisits", "totals_bounces", "trafficSource_adwordsClickInfo_page", "trafficSource_isTrueDirect", "totals_bounces", "totals_newVisits" had missing values. We handled the missing values with "zeroes", so the ML algorithms doesn't face any issues. This is a very important step in building the Machine Learning Pipeline. 
 
 - Feature Engineering
 
