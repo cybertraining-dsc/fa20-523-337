@@ -149,21 +149,31 @@ We tested several different Machine Learning Models as shown below. The results 
 
 	- Linear Regression Model
 	
+	Test
+	
 	![Linear Regression](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/linear_regression.png)	
 
 	- XGBoost Regressor
+	
+	Test
 	
 	![XGBoost](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/xgboost.png)
 
 	- LightGBM Regressor	
 	
+	Test
+	
 	![lightgbm](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/lightgbm.png)
 	
 	- Lasso Regression
 	
+	Test
+	
 	![lasso](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/lasso.png)
 
 	- Ridge Regressor
+	
+	Test
 	
 	![Ridge](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/ridge.png)
 
