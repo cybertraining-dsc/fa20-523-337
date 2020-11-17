@@ -128,7 +128,8 @@ Data Pre-Processing is an important step to build a Machine Learning Model. The 
 
 - Feature Engineering
 
-Created sophisticated functions to encode categorical variables. As this is regression problem, we need the dataset to be encoded categorically, so all the categories can be converted as numeric fields. We also created other functions to process date time, extract sum, count and mean from numeric variables such as "geoNetwork_networkDomain", "totals_hits" 
+Feature Engineering is the process of extracting the hidden signals/features, so the model can use these features to increase the predictive power. This step is the fundamental difference between a good model and a bad model. Also, there is no one-size-fits all approach for Feature Engineering. It is extremely time consuming and requires a lot of domain knowledge as well. 
+For this project, we created sophisticated functions to extract date related values such as Month, Year, Data, Weekday, WeekofYear. We also noticed that browser and operating systems are redundant features. Instead of removing them, we combined them to create a combinational feature, so we believe this will increase the predictive power. We also calculated "mean", "sum" and "count" for pageviews and hits, so it can provide more powerful extraction of the feature to the model.
 
 - Model Algorithms and Optimization Methods
 
@@ -154,7 +155,7 @@ I found the XGBoost Method to have the lowest RMSE error.
 - Jupyter Notebook (Google Colab)
 - Packages: Pandas, Numpy, Matplotlib, sklearn
 
-## 6. Project Timeline
+## 6. Project Timelines
 
 ### October 16
 
