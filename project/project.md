@@ -147,31 +147,31 @@ Scikit learn has inbuilt libraries to handle Train/Test Split as part the "model
 
 We tested several different Machine Learning Models as shown below. The results of each step and their settings are explained in their respective sections:
 
-	- Linear Regression Model
+- Linear Regression Model
 	
 	Test
 	
 	![Linear Regression](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/linear_regression.png)	
 
-	- XGBoost Regressor
+- XGBoost Regressor
 	
 	Test
 	
 	![XGBoost](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/xgboost.png)
 
-	- LightGBM Regressor	
+- LightGBM Regressor	
 	
 	Test
 	
 	![lightgbm](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/lightgbm.png)
 	
-	- Lasso Regression
+- Lasso Regression
 	
 	Test
 	
 	![lasso](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/lasso.png)
 
-	- Ridge Regressor
+- Ridge Regressor
 	
 	Test
 	
