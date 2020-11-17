@@ -126,11 +126,11 @@ I found the XGBoost Method to have the lowest RMSE error.
 
 ## 8. References
 
-[^1]: Kaggle Competition, 2019, Predict the Online Store Revenue [online] Available at: <https://www.kaggle.com/c/ga-customer-revenue-prediction/rules>
+[^1]: Kaggle Competition, 2019, Predict the Online Store Revenue [online]. Available at: <https://www.kaggle.com/c/ga-customer-revenue-prediction/rules>.
 
-[^2]: Kaggle Competition, 2019,  Simple Exploration Baseline, [online] Available at: <https://www.kaggle.com/sudalairajkumar/simple-exploration-baseline-ga-customer-revenue>
+[^2]: Kaggle Competition, 2019,  Simple Exploration Baseline, [online]. Available at: <https://www.kaggle.com/sudalairajkumar/simple-exploration-baseline-ga-customer-revenue>.
 
-[^3]: Towards DataScience, 2020,  Sweetviz- Powerful EDA, [online] Available at: <https://towardsdatascience.com/powerful-eda-exploratory-data-analysis-in-just-two-lines-of-code-using-sweetviz-6c943d32f34>
+[^3]: Towards DataScience, 2020,  Sweetviz- Powerful EDA, [online]. Available at: <https://towardsdatascience.com/powerful-eda-exploratory-data-analysis-in-just-two-lines-of-code-using-sweetviz-6c943d32f34>.
 
 
 
