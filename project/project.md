@@ -63,7 +63,8 @@ The data was obtained from Kaggle Competition. Please find the details of the da
 
 - Data Exploration
 
-The dataset we obtained contained 12 Independent Variable and 1 Dependent variable. The Dependent Variable is totals.transactionRevenue. The end goal of this project is to predict the revenue of the Online Store Customer as close as possible.
+The dataset obtained for this project is large.  It had contained over 900k records. The dataset also contained 12 Independent Variable and 1 Dependent variable. The Dependent Variable is totals.transactionRevenue. 
+The end goal of this project is to predict the revenue of the Online Store Customer as close as possible.
 
 - Target Variable
 
@@ -71,9 +72,26 @@ The Target Variable is totals.transactionRevenue has the transaction value of ea
 
 ![Target Variable](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/y_after_transformation.png)  
 
+- Exploratory Data Analysis
+
+	-	Browser
+		
+		The most popular browser is Google Chrome. Also, we noticed second best users were using safari browser and firefox was placed third
+		![Browser Variable](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/device_browser.png)  
+				
+	-	Device Category
+	
+		About 70% of users were accessing online store via desktop
+		![Device Category Variable](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/device_category.png)		
+		
+	-	OperatingSystem
+		
+		Windows is still the popular operating system among the Google Store visitors among the desktop users. However, among the mobile users, what's interesting is, almost equal number of ios users (slightly lower) as android users access google play store.
+		![Device Category Variable](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/device_operating_system.png)		
+		
 - Data Pre-Processing
 
-The dataset obtained for this project is large. It certainly contained over 900k records . Also some of the columns contained null values as well. So, we first visualized the target variable and identified the target variable was a skewed variable. So applied log transformations to get the data to be distributed normally. The variables such as "totals_newVisits", "totals_bounces", "trafficSource_adwordsClickInfo_page", "trafficSource_isTrueDirect", "totals_bounces", "totals_newVisits" had missing values. We applied zeroes to all the missing values. 
+We identified some of the columns contained null values including the target variable. The variables such as "totals_newVisits", "totals_bounces", "trafficSource_adwordsClickInfo_page", "trafficSource_isTrueDirect", "totals_bounces", "totals_newVisits" had missing values. We filled the missing values with "Zeroes". 
 
 - Feature Engineering
 
