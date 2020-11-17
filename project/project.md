@@ -77,16 +77,19 @@ The Target Variable is totals.transactionRevenue has the transaction value of ea
 	-	Browser
 		
 		The most popular browser is Google Chrome. Also, we noticed second best users were using safari browser and firefox was placed third
+		
 		![Browser Variable](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/device_browser.png)  
 				
 	-	Device Category
 	
 		About 70% of users were accessing online store via desktop
+		
 		![Device Category Variable](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/device_category.png)		
 		
 	-	OperatingSystem
 		
 		Windows is still the popular operating system among the Google Store visitors among the desktop users. However, among the mobile users, what's interesting is, almost equal number of ios users (slightly lower) as android users access google play store.
+		
 		![Device Category Variable](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/device_operating_system.png)		
 		
 - Data Pre-Processing
