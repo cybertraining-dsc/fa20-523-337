@@ -38,7 +38,7 @@ The dataset we used is from the Kaggle Competition. The dataset contains two csv
 - Test.csv, User transactions from August 2nd, 2017 to April 30th, 2018, 804.6K records
 
 
-The metrics we will use for this project is root mean squared error (RMSE). The root mean squared error function forms our objective/cost function which will be minimized to estimate the optimal parameters for our linear function through Gradient Descent. We will conduct multiple experiments to obtain convergence using different “number of iterations” value and other hyper-parameters (e.g. learning rate).
+The metrics we will use for this project is root mean squared error (RMSE). The root mean squared error function forms our objective/cost function which will be minimized to estimate the optimal parameters for our linear function through Gradient Descent. We will conduct multiple experiments to obtain convergence using different "number of iterations" value and other hyper-parameters (e.g. learning rate).
 
 RMSE is defined as:
 
@@ -123,6 +123,7 @@ We are planning to explore different algorithms as shown below:
 
 ## 7. Conclusion
 
+- Will be populated soon
 
 ## 8. References
 
