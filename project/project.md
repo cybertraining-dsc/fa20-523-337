@@ -61,6 +61,7 @@ The data was obtained from Kaggle Competition. Please find the details of the da
 	The data we obtained from Kaggle was over 2.6 GB (for Train and Test). As the size of the dataset was large, I created a storage bucket in GCP to host the data. The URL is provided above for your reference	
 
 - Data Exploration
+
 The dataset we obtained contained 54 Independent Variable and 1 Dependent variable. The Dependent Variable is "totals.transactionRevenue". The end goal of this project is to predict the revenue of the Online Store Customer as close as possible.
 
 - Data Pre-Processing
@@ -119,7 +120,6 @@ We are planning to explore different algorithms as shown below:
 - Report and document findings
 
 ## 7. Conclusion
-
 
 
 ## 8. References
