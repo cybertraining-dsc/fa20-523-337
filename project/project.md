@@ -42,7 +42,7 @@ The metrics we will use for this project is root mean squared error (RMSE). The 
 
 RMSE is defined as:
 
-![Figure 2.1](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/loss.png)  
+![Figure 2.1](https://github.com/cybertraining-dsc/fa20-523-337/raw/master/project/images/loss.png)  
 
 where y-hat is the natural log of the predicted revenue for a customer and y is the natural log of the actual summed revenue value plus one as seen below.
 
