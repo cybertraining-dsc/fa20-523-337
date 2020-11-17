@@ -92,6 +92,36 @@ The Target Variable is totals.transactionRevenue has the transaction value of ea
 		
 		![Device Category Variable](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/device_operating_system.png)		
 		
+	-	GeoNetwork-City
+		
+		Mountainview, California tops the cities list. However in the top 10 cities, 4 cities are from California. 
+		
+		![GeoNetwork-City](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/geo_network_city.png)  
+				
+	-	GeoNetwork-Country
+		
+		Customers from US are way ahead of other customers from different countries. May be this could be due to the Online Store data that was provided to us was pulled from US Google Play Store (Possible BIAS!!!)
+		
+		![GeoNetwork-Country](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/geo_network_country.png)		
+	
+	-	GeoNetwork-Region
+		
+		No surprise here, as we are already aware that majority of the customers are from US, so America region tops the list
+		
+		![GeoNetwork-Region](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/geo_network_continent.png)
+			
+	-	GeoNetwork-Metro
+		
+		SFO tops the list for all metro cities, followed by New York and then London
+		
+		![GeoNetwork-Metro](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/geo_network_metro.png)	
+		
+	-	Ad Sources
+	
+		Google Merchandise and Google Online Store are the top sources where the traffic is coming from to the Online Store. 
+		
+		![GeoNetwork-Metro](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/traffic_source_adcontent.png)	
+	
 - Data Pre-Processing
 
 We identified some of the columns contained null values including the target variable. The variables such as "totals_newVisits", "totals_bounces", "trafficSource_adwordsClickInfo_page", "trafficSource_isTrueDirect", "totals_bounces", "totals_newVisits" had missing values. We filled the missing values with "Zeroes". 
