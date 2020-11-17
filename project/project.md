@@ -124,7 +124,7 @@ The Target Variable is totals.transactionRevenue has the transaction value of ea
 	
 - Data Pre-Processing
 
-Data Pre-Processing is an important step to build a Machine Learning Model. The data pre-processing step typically consists of data cleaning, transformation and feature selection, so only the most cleaner and accurate data is fed to the models. The dataset we obtained for this project was noticed to contain several data issues such as missing values, less to no variance (zero variance) in the data and also identified the target variable not having random distribution.  The variables such as "totals_newVisits", "totals_bounces", "trafficSource_adwordsClickInfo_page", "trafficSource_isTrueDirect", "totals_bounces", "totals_newVisits" had missing values. We handled the missing values with "zeroes", so the ML algorithms doesn't face any issues. This is a very important step in building the Machine Learning Pipeline. 
+Data Pre-Processing is an important step to build a Machine Learning Model. The data pre-processing step typically consists of data cleaning, transformation, standardization and feature selection, so only the most cleaner and accurate data is fed to the models. The dataset we obtained for this project was noticed to contain several data issues such as missing values, less to no variance (zero variance) in the data and also identified the target variable not having random distribution.  The variables such as "totals_newVisits", "totals_bounces", "trafficSource_adwordsClickInfo_page", "trafficSource_isTrueDirect", "totals_bounces", "totals_newVisits" had missing values. We handled the missing values with "zeroes", so the ML algorithms doesn't face any issues. This is a very important step in building the Machine Learning Pipeline. 
 
 - Feature Engineering
 
@@ -135,27 +135,28 @@ For this project, we created sophisticated functions to extract date related val
 
 Feature Selection refers to selection of features in your data that would improve your machine learning model. There is subtle variation between Feature Selection and Feature Engineering. The Feature Engineering technique is designed to extract more feature from the dataset and the feature selection technique allows only relevant features into the dataset. Also, how do we know what are the relevant features? There are several methodologies and techniques that are developed over the years but there is no one-size-fits-all methodology. 
 
-Feature Selection like Feature Engineering is more of an art than science. There are several iterative procedure that uses Information Gain, Entropy and Correlation scroes to decide which feature gets into the model. There are also advanaced Deep learning models that can build or tree based models that can also provide us which of these variables are significant after the model is built. Similar to Feature Engineering, Feature Selection should also require domain specific knowledge to develop festure selection strategies.
+Feature Selection like Feature Engineering is more of an art than science. There are several iterative procedure that uses Information Gain, Entropy and Correlation scores to decide which feature gets into the model. There are also advanced Deep learning models that can be built or tree based models that can also provide us which of these variables are significant after the model is built. Similar to Feature Engineering, Feature Selection should also require domain specific knowledge to develop festure selection strategies.
 
-Fot this project, we dropped the features which had no variance in the data and the features that had a lot of null values as well. These features would have not added any value to the dataset. Also, depending on the final result, we can try different strategies in the future to improve the performance of the model.
+For this project, we dropped the features which had no variance in the data and the features that had a lot of null values as well. These features would have not added any value to the dataset. Also, depending on the final result, we can try different strategies in the future to improve the performance of the model.
+
+- Prepare the data
+
+Scikit learn has inbuilt libraries to handle Train/Test Split as part the "model_selection" package. We split the dataset randomly with 80% Training and 20% Testing datasets. 
 
 - Model Algorithms and Optimization Methods
 
-I tested the following algorithms 
+We tested several different Machine Learning Models as shown below. The results of each step and their settings are explained in their respective sections:
 
-- Linear Regression Model
+	- Linear Regression Model
 
-- XGBoost Regressor
+	- XGBoost Regressor
 
-- LightGBM Regressor
+	- LightGBM Regressor	
 
-- Lasso Regression
+	- Lasso Regression
 
-- Ridge Regressor
+	- Ridge Regressor
 
-- Results Validation
-
-I found the XGBoost Method to have the lowest RMSE error. 
 
 ## 5. Technologies
 
