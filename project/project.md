@@ -14,6 +14,7 @@ Anantha Janakiraman, ajanakir@iu.edu, fa20-523-337
 {{% pageinfo %}}
 
 ## Abstract
+
 The 80/20 rule has proven true for many businesses–only a small percentage of customers produce most of the revenue. As such, marketing teams are challenged to make appropriate investments in promotional strategies. We're challenged to analyze a Google Merchandise Store (also known as GStore, where Google swag is sold) customer dataset to predict revenue per customer. Hopefully, the outcome will be more actionable operational changes and a better use of marketing budgets for those companies who choose to use data analysis on top of GA data.
 
 Contents
@@ -62,7 +63,7 @@ The data was obtained from Kaggle Competition. Please find the details of the da
 
 - Data Exploration
 
-The dataset we obtained contained 54 Independent Variable and 1 Dependent variable. The Dependent Variable is "totals.transactionRevenue". The end goal of this project is to predict the revenue of the Online Store Customer as close as possible.
+The dataset we obtained contained 54 Independent Variable and 1 Dependent variable. The Dependent Variable is totals.transactionRevenue. The end goal of this project is to predict the revenue of the Online Store Customer as close as possible.
 
 - Data Pre-Processing
 
@@ -117,6 +118,7 @@ We are planning to explore different algorithms as shown below:
 - Review Results
 
 ### November 16
+
 - Report and document findings
 
 ## 7. Conclusion
