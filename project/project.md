@@ -133,6 +133,12 @@ For this project, we created sophisticated functions to extract date related val
 
 - Feature Selection
 
+Feature Selection refers to selection of features in your data that would improve your machine learning model. There is subtle variation between Feature Selection and Feature Engineering. The Feature Engineering technique is designed to extract more feature from the dataset and the feature selection technique allows only relevant features into the dataset. Also, how do we know what are the relevant features? There are several methodologies and techniques that are developed over the years but there is no one-size-fits-all methodology. 
+
+Feature Selection like Feature Engineering is more of an art than science. There are several iterative procedure that uses Information Gain, Entropy and Correlation scroes to decide which feature gets into the model. There are also advanaced Deep learning models that can build or tree based models that can also provide us which of these variables are significant after the model is built. Similar to Feature Engineering, Feature Selection should also require domain specific knowledge to develop festure selection strategies.
+
+Fot this project, we dropped the features which had no variance in the data and the features that had a lot of null values as well. These features would have not added any value to the dataset. Also, depending on the final result, we can try different strategies in the future to improve the performance of the model.
+
 - Model Algorithms and Optimization Methods
 
 I tested the following algorithms 
