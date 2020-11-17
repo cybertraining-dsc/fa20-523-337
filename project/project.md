@@ -63,11 +63,17 @@ The data was obtained from Kaggle Competition. Please find the details of the da
 
 - Data Exploration
 
-The dataset we obtained contained 54 Independent Variable and 1 Dependent variable. The Dependent Variable is totals.transactionRevenue. The end goal of this project is to predict the revenue of the Online Store Customer as close as possible.
+The dataset we obtained contained 12 Independent Variable and 1 Dependent variable. The Dependent Variable is totals.transactionRevenue. The end goal of this project is to predict the revenue of the Online Store Customer as close as possible.
+
+- Target Variable
+
+The Target Variable is totals.transactionRevenue has the transaction value of each visit. But, this column contains 98.72% of missing values for revenue (no purchase). The Target variable had a skewed distribution, we performed a lognormal distribution, so the target variable has normal distribution.
+
+![Target Variable](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/y_after_transformation.png)  
 
 - Data Pre-Processing
 
-The dataset obtained for this project is large. It certainly contained over 900k records in just the training set. Also some of the columns contained null values as well. So, we first visualized the target variable and identified the target variable was a skewed variable. So applied log transformations to get the data to be distributed normally. The variables such as "totals_newVisits", "totals_bounces", "trafficSource_adwordsClickInfo_page", "trafficSource_isTrueDirect", "totals_bounces", "totals_newVisits" had missing values. We applied zeroes to all the missing values. 
+The dataset obtained for this project is large. It certainly contained over 900k records . Also some of the columns contained null values as well. So, we first visualized the target variable and identified the target variable was a skewed variable. So applied log transformations to get the data to be distributed normally. The variables such as "totals_newVisits", "totals_bounces", "trafficSource_adwordsClickInfo_page", "trafficSource_isTrueDirect", "totals_bounces", "totals_newVisits" had missing values. We applied zeroes to all the missing values. 
 
 - Feature Engineering
 
