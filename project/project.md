@@ -67,13 +67,15 @@ The dataset we obtained contained 54 Independent Variable and 1 Dependent variab
 
 - Data Pre-Processing
 
+The dataset obtained for this project is large. It certainly contained over 900k records in just the training set. Also some of the columns contained null values as well. So, we first visualized the target variable and identified the target variable was a skewed variable. So applied log transformations to get the data to be distributed normally. The variables such as "totals_newVisits", "totals_bounces", "trafficSource_adwordsClickInfo_page", "trafficSource_isTrueDirect", "totals_bounces", "totals_newVisits" had missing values. We applied zeroes to all the missing values. 
+
 - Feature Engineering
 
-- Build the data pipeline
+Created sophisticated functions to encode categorical variables. As this is regression problem, we need the dataset to be encoded categorically, so all the categories can be converted as numeric fields. We also created other functions to process date time, extract sum, count and mean from numeric variables such as "geoNetwork_networkDomain", "totals_hits" 
 
 - Model Algorithms and Optimization Methods
 
-We are planning to explore different algorithms as shown below:
+I tested the following algorithms 
 
 - Linear Regression Model
 
@@ -85,12 +87,9 @@ We are planning to explore different algorithms as shown below:
 
 - Ridge Regressor
 
-- Feature Importance
-	- Xgboost Regressor
-	- LightGBM Regressor
-	- Lasso Regressor Regressor
-	- Ridge Regressor
 - Results Validation
+
+I found the XGBoost Method to have the lowest RMSE error. 
 
 ## 5. Technologies
 
