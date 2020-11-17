@@ -41,7 +41,7 @@ The metrics we will use for this project is root mean squared error (RMSE). The 
 
 RMSE is defined as:
 
-![Figure 2.1](https://github.com/cybertraining-dsc/fa20-523-337/blob/master/project/images/loss.png)  
+![Figure 2.1](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/loss.png)  
 
 where y-hat is the natural log of the predicted revenue for a customer and y is the natural log of the actual summed revenue value plus one as seen below.
 
@@ -124,11 +124,11 @@ We are planning to explore different algorithms as shown below:
 
 ## 8. References
 
-[^1]: Kaggle Competition, 2019, Predict the Online Store Revenue [online] Available at: <https://www.kaggle.com/c/ga-customer-revenue-prediction/rules> [Accessed 21 October 2020]
+[^1]: Kaggle Competition, 2019, Predict the Online Store Revenue [online] Available at: <https://www.kaggle.com/c/ga-customer-revenue-prediction/rules>
 
-[^2]: Kaggle Competition, 2019,  Simple Exploration Baseline, [online] Available at: <https://www.kaggle.com/sudalairajkumar/simple-exploration-baseline-ga-customer-revenue> [Accessed 21 October 2020] 
+[^2]: Kaggle Competition, 2019,  Simple Exploration Baseline, [online] Available at: <https://www.kaggle.com/sudalairajkumar/simple-exploration-baseline-ga-customer-revenue>
 
-[^3]: Towards DataScience, 2020,  Sweetviz- Powerful EDA, [online] Available at: <https://towardsdatascience.com/powerful-eda-exploratory-data-analysis-in-just-two-lines-of-code-using-sweetviz-6c943d32f34> [Accessed 21 October 2020] 
+[^3]: Towards DataScience, 2020,  Sweetviz- Powerful EDA, [online] Available at: <https://towardsdatascience.com/powerful-eda-exploratory-data-analysis-in-just-two-lines-of-code-using-sweetviz-6c943d32f34>
 
 
 
