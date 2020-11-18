@@ -51,7 +51,7 @@ where y-hat is the natural log of the predicted revenue for a customer and y is 
 
 We used CRISP-DM process methodology for this project. The  high-level implementation steps is shown in the image below:
 
-![Methodology](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/Methodology.png)  
+![Methodology](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/methodology.png)  
 
 - Get Data
 
