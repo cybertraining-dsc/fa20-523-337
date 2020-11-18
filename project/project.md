@@ -15,7 +15,7 @@ Anantha Janakiraman, ajanakir@iu.edu, fa20-523-337
 
 ## Abstract
 
-The 80/20 rule has proven true for many businesses–only a small percentage of customers produce most of the revenue. As such, marketing teams are challenged to make appropriate investments in promotional strategies. We're challenged to analyze a Google Merchandise Store (also known as GStore, where Google swag is sold) customer dataset to predict revenue per customer. Hopefully, the outcome will be more actionable operational changes and a better use of marketing budgets for those companies who choose to use data analysis on top of GA data.
+The 80/20 rule has proven true for many businesses–only a small percentage of customers produce most of the revenue. As such, marketing teams are challenged to make appropriate investments in promotional strategies. We're challenged to analyze a Google Merchandise Store (also known as GStore, where Google swag is sold) customer dataset to predict revenue per customer. Hopefully, the outcome will be more actionable operational changes and a better use of marketing budgets for those companies who choose to use data analysis on top of GA data. [^1]
 
 Contents
 
@@ -32,6 +32,7 @@ Our objective is to predict the natural log of total revenue per customer which 
 ## 2. Datasets
 
 - <https://www.kaggle.com/c/ga-customer-revenue-prediction>
+- [Kaggle - Customer Revenue Prediction](https://www.kaggle.com/c/ga-customer-revenue-prediction)
 
 The dataset we used is from the Kaggle Competition. The dataset contains two csv files.
 - Train.csv, User transactions from August 1st, 2016 to August 1st, 2017, 903.6K records
@@ -238,9 +239,7 @@ XGBoost had the best performance with the lowest RMSE scores. We recommend using
 
 [^1]: Kaggle Competition,2019,Predict the Online Store Revenue,[online] Available at: <https://www.kaggle.com/c/ga-customer-revenue-prediction/rules>
 
-[^2]: Kaggle Competition,2019,Simple Exploration Baseline,[online] Available at: <https://www.kaggle.com/sudalairajkumar/simple-exploration-baseline-ga-customer-revenue>
-
-[^3]: Towards DataScience,2020,Sweetviz- Powerful EDA,[online] Available at: <https://towardsdatascience.com/powerful-eda-exploratory-data-analysis-in-just-two-lines-of-code-using-sweetviz-6c943d32f34>
+[^2]: Towards DataScience,2020,Sweetviz- Powerful EDA,[online] Available at: <https://towardsdatascience.com/powerful-eda-exploratory-data-analysis-in-just-two-lines-of-code-using-sweetviz-6c943d32f34>
 
 
 
