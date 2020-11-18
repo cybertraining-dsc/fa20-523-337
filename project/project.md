@@ -20,6 +20,7 @@ Status: in progress
 - [ ] hid from second author wrong
 - [ ] you are not looking at the output of the check report script some errors are listed there
 - [ ] the word below and above must never be used in a formal paper to refer to figures and tables and sections, use numbers as we posted in piszza
+- [ ] bullet lists must not be used in substitution for subsections. You could *bf*. them and do not use a bullet similar to LaTeX paragraphs if you do not want to use subsections.SUbsections show up in the TOC, *bf*. does not
 - [ ] This si not a ppt presentations. for example
 
   * Kaggle - Customer Revenue Prediction
