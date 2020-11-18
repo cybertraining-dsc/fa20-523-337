@@ -151,31 +151,31 @@ We tested several different Machine Learning Models as shown below. The results 
 	
 	SKLearn Linear Regression performed well overall. We used 5 fold CV. The best RMSE Score for this model we obtained was: 1.89. Also the training and test scores seems to be very close and so we don't suspect any overfitting.  
 	
-	![Linear Regression](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/linear_regression.png)	
+	![Linear Regression](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/linear_regression1.png)	
 
 - XGBoost Regressor
 	
 	XGBoost Linear Regression performed very well. It was our top performing model with the lowest RMSE error of 1.619. Also the training and test scores seems to be little different and so might have produce overfitting. I tested multiple rounds with different parameters, this was the best performing model overall.  
 		
-	![XGBoost](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/xgboost.png)
+	![XGBoost](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/xgboost1.png)
 
 - LightGBM Regressor	
 	
 	LightGBM Regression was the second best performing model interms of RMSE Scores.  Also the training and test scores seems to be little different and so might have produce overfitting. I tested multiple rounds with different parameters, this was the best performing model overall.  
 	
-	![lightgbm](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/lightgbm.png)
+	![lightgbm](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/lightgbm1.png)
 	
 - Lasso Regression
 	
 	Lasso performed a bit better than baseline model. However, XGBoost seemed to have performed better than Lasso
 	
-	![lasso](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/lasso.png)
+	![lasso](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/lasso1.png)
 
 - Ridge Regressor
 	
 	Ridge performed a bit better than baseline model. However, XGBoost seemed to have performed better than Ridge
 	
-	![Ridge](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/ridge.png)
+	![Ridge](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/ridge1.png)
 
 
 ## 5. Software Technologies
