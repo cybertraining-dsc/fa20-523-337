@@ -55,8 +55,11 @@ Our objective is to predict the natural log of total revenue per customer which 
 - [Kaggle - Customer Revenue Prediction](https://www.kaggle.com/c/ga-customer-revenue-prediction)
 
 The dataset we used is from the Kaggle Competition. The dataset contains two csv files.
+
 - Train.csv, User transactions from August 1st, 2016 to August 1st, 2017, 903.6K records
 - Test.csv, User transactions from August 2nd, 2017 to April 30th, 2018, 804.6K records
+
+CITATIONS TO DATA MISSING
 
 
 The metrics we will use for this project is root mean squared error (RMSE). The root mean squared error function forms our objective/cost function which will be minimized to estimate the optimal parameters for our linear function through Gradient Descent. We will conduct multiple experiments to obtain convergence using different "number of iterations" value and other hyper-parameters (e.g. learning rate).
@@ -64,6 +67,8 @@ The metrics we will use for this project is root mean squared error (RMSE). The 
 RMSE is defined as:
 
 ![Figure 2.1](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/loss.png)  
+
+CAPTION MISSING
 
 where y-hat is the natural log of the predicted revenue for a customer and y is the natural log of the actual summed revenue value plus one as seen below.
 
@@ -75,6 +80,9 @@ We used CRISP-DM process methodology for this project. The  high-level implement
 ![Methodology](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/methodology.png)
 
 **Figure - Project Methodology**
+
+
+THIS IS NOT PPT
 
 - Get Data
 
@@ -105,11 +113,15 @@ The Target Variable is totals.transactionRevenue has the transaction value of ea
 		
 		![Browser Variable](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/device_browser.png)		
 				
+		CAPTION MISSING
+		
 	-	Device Category
 	
 		About 70% of users were accessing online store via desktop
 		
 		![Device Category Variable](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/device_category.png)		
+		
+		CAPTION MISSING
 		
 	-	OperatingSystem
 		
@@ -123,27 +135,37 @@ The Target Variable is totals.transactionRevenue has the transaction value of ea
 		
 		![GeoNetwork-City](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/geo_network_city.png)  
 				
+		CAPTION MISSING
+		
 	-	GeoNetwork-Country
 		
 		Customers from US are way ahead of other customers from different countries. May be this could be due to the Online Store data that was provided to us was pulled from US Google Play Store (Possible BIAS!!!)
 		
 		![GeoNetwork-Country](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/geo_network_country.png)		
 	
+		CAPTION MISSING
+		
 	-	GeoNetwork-Region
 		
 		No surprise here, as we are already aware that majority of the customers are from US, so America region tops the list
 		
 		![GeoNetwork-Region](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/geo_network_continent.png)
-			
+		
+		CAPTION MISSING
+		
 	-	GeoNetwork-Metro
 		
 		SFO tops the list for all metro cities, followed by New York and then London
 		
 		![GeoNetwork-Metro](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/geo_network_metro.png)	
 		
+		CAPTION MISSING
+		
 	-	Ad Sources
 	
 		Google Merchandise and Google Online Store are the top sources where the traffic is coming from to the Online Store. 
+		
+		CAPTION MISSING
 		
 		![GeoNetwork-Metro](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/traffic_source_adcontent.png)	
 	
@@ -177,38 +199,49 @@ We tested several different Machine Learning Models as shown below. The results 
 	SKLearn Linear Regression performed well overall. We used 5 fold CV. The best RMSE Score for this model we obtained was: 1.89. Also the training and test scores seems to be very close and so we don't suspect any overfitting.  
 	
 	![Linear Regression](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/linear_regression1.png)	
-	**Figure - Linear Regression Model** 
+	
+	**Figure 1:** Linear Regression Model
+	
+	REFERNCE IN TEXT TO Figure 1 missing
 
 - XGBoost Regressor
 	
 	XGBoost Linear Regression performed very well. It was our top performing model with the lowest RMSE error of 1.619. Also the training and test scores seems to be little different and so might have produce overfitting. I tested multiple rounds with different parameters, this was the best performing model overall.  
 		
 	![XGBoost](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/xgboost1.png)
-	**Figure - XGBoost Model** 
+	
+	**Figure - XGBoost Model DOES NOT FOLLOW TEMPLATE** 
+	
+	
 
 - LightGBM Regressor	
 	
 	LightGBM Regression was the second best performing model interms of RMSE Scores.  Also the training and test scores seems to be little different and so might have produce overfitting. I tested multiple rounds with different parameters, this was the best performing model overall.  
 	
 	![lightgbm](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/lightgbm1.png)
-	**Figure - LightGBM Model** 
+	
+	**Figure - LightGBM Model DOES NOT FOLLOW TEMPLATE** 
 	
 - Lasso Regression
 	
 	Lasso performed a bit better than baseline model. However, XGBoost seemed to have performed better than Lasso
 	
 	![lasso](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/lasso1.png)
-	**Figure - Lasso Model** 
+	
+	**Figure - Lasso Model DOES NOT FOLLOW TEMPLATE** 
 
 - Ridge Regressor
 	
 	Ridge performed a bit better than baseline model. However, XGBoost seemed to have performed better than Ridge
 	
 	![Ridge](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/ridge1.png)
-	**Figure - Ridge Model** 
+	
+	**Figure - Ridge Model DOES NOT FOLLOW TEMPLATE** 
 
 
 ## 5. Software Technologies
+
+PARAGRAPH MISSING, THIS IS NOT PPT
 
 - Python
 - Jupyter Notebook (Google Colab)
@@ -216,41 +249,40 @@ We tested several different Machine Learning Models as shown below. The results 
 
 ## 6. Project Timelines
 
-### October 16
-
-- Explore the data set
-- Explore ML Framework
-- Perform Basic EDA
-
-### November 2
-
-- The dataset was large. Identified the problem was a regression problem
-- Explored different variables and their distributions
-- Build base line model
-
-### November 9
-
-- Build ML models using LR, XGBoost, LightGBM
-- Review Results
-
-### November 16
-
-- Report and document findings
+* October 16
+  - Explore the data set
+  - Explore ML Framework
+  - Perform Basic EDA
+* November 2
+  - The dataset was large. Identified the problem was a regression problem
+  - Explored different variables and their distributions
+  - Build base line model
+* November 9
+  - Build ML models using LR, XGBoost, LightGBM
+  - Review Results
+* November 16
+  - Report and document findings
 
 ## 7. Conclusion
+
+ç WHY USE THIS CHAR?
+
 ç for majority of the Machine Learning projects. We wanted to create a template so it can utilized for any ML projects. The dataset we obtained for this project was a bit challenging because a lot of data cleaning, flattening and transformations were required to get the data in the required format. 
 
 We also performed feature enngineering in this dataset to get more predicitve value out of the features and built a pipeline, so it can be easily fed into different models. We tested five different models. They are: Linear Regression, XGBoost, Light GBM, Lasso and Ridge. The summary of all the models is shown below for your reference:
 
 ![Model_Results](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/model_results_new.png)
-**Figure - Model Results Summary** 
+
+**Figure - Model Results Summary DOES NOT FOLLOW TEMPLATE** 
 
 
 XGBoost had the best performance with the lowest RMSE scores. We recommend using the XGBoost model to be tested with real time data so, the performance of the model can be evaluated in realtime and additionally, if required, hyper parameter tuning can be performed on the XGBoost model. 
 
-### Future Considerations:
+### Future Considerations
 
-- Due to the limited capacity of our Colab Notebook setup, we were unable to perform Cross Validation for XGBoost and Light GBM. We recommend to perform cross validation for these models, check the RMSE Scores and potentially avoid overfitting, if any 
+THIS IS NOT PPT
+
+- Due to the limited capacity of our Colab Notebook setup, we were unable to perform Cross Validation for XGBoost and Light GBM. We recommend to perform cross validation for these models, check the RMSE Scores and potentially avoid overfitting, if any.
 - The tree based models performed well in this dataset. In the future try additional tree based models like Random Forest to evaluate their performance
 
 
