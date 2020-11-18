@@ -31,7 +31,6 @@ Our objective is to predict the natural log of total revenue per customer which 
 
 ## 2. Datasets
 
-- <https://www.kaggle.com/c/ga-customer-revenue-prediction>
 - [Kaggle - Customer Revenue Prediction](https://www.kaggle.com/c/ga-customer-revenue-prediction)
 
 The dataset we used is from the Kaggle Competition. The dataset contains two csv files.
@@ -61,8 +60,8 @@ We used CRISP-DM process methodology for this project. The  high-level implement
 The data was obtained from Kaggle Competition. Please find the details of the dataset in the above section
 
 - Load Data
-	-  <https://storage.googleapis.com/gstoretrain/train.csv>
-	-  <https://storage.googleapis.com/gstoretrain/test.csv>
+	- [Kaggle - Customer Revenue Prediction - Train Dataset] (https://storage.googleapis.com/gstoretrain/train.csv)
+	- [Kaggle - Customer Revenue Prediction - Test Dataset] (https://storage.googleapis.com/gstoretrain/test.csv)
 
 	The data we obtained from Kaggle was over 2.6 GB (for Train and Test). As the size of the dataset was large, I created a storage bucket in GCP to host the data. The URL is provided above for your reference.Also for this project we are using only the Train data to build our models and test the results because the real end goal is to test the effectiveness of algorithm. Since the test set doesnt contain the Target Variable (rightly so!), we won't be consuming the test set for our analysis.	
 
