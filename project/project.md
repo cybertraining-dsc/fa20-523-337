@@ -17,9 +17,10 @@ Status: in progress
 - [ ] there ar no : in headers such as in future considerations:
 - [ ] use grammerly
 - [ ] your tables are unreadable. There are different ways on how to do this. You can include the parameters as text and the rest as markdown table
+- [ ] hid from second author wrong
 
 Balaji Dhamodharan, bdhamodh@iu.edu, fa20-523-337
-Anantha Janakiraman, ajanakir@iu.edu, fa20-523-337
+Anantha Janakiraman, ajanakir@iu.edu, fa20-523-???  
 
 [Edit](https://github.com/cybertraining-dsc/fa20-523-337/edit/main/project/project.md)
 
