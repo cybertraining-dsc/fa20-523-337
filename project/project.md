@@ -51,9 +51,8 @@ where y-hat is the natural log of the predicted revenue for a customer and y is 
 
 We used CRISP-DM process methodology for this project. The  high-level implementation steps is shown in the image below:
 
-![Methodology](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/methodology.png) 
-
-**Figure 1:** Project Methodology
+![Methodology](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/methodology.png)
+			**Figure - Project Methodology**
 
 - Get Data
 
@@ -76,17 +75,13 @@ The Target Variable is totals.transactionRevenue has the transaction value of ea
 
 ![Target Variable](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/y_after_transformation.png)  
 
-**Figure 2:** Target Variable
-
 - Exploratory Data Analysis
 
 	-	Browser
 		
 		The most popular browser is Google Chrome. Also, we noticed second best users were using safari browser and firefox was placed third
 		
-		![Browser Variable](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/device_browser.png)
-
-		**Figure 3:** Browser Variable
+		![Browser Variable](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/device_browser.png)		
 				
 	-	Device Category
 	
