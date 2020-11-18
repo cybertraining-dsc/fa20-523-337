@@ -51,7 +51,9 @@ where y-hat is the natural log of the predicted revenue for a customer and y is 
 
 We used CRISP-DM process methodology for this project. The  high-level implementation steps is shown in the image below:
 
-![Methodology](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/methodology.png)  
+![Methodology](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/methodology.png) 
+
+**Figure 1:** Project Methodology
 
 - Get Data
 
@@ -211,7 +213,18 @@ We tested several different Machine Learning Models as shown below. The results 
 
 ## 7. Conclusion
 
-- Will be populated soon
+The steps performed here is applicable for majority of the Machine Learning projects. We wanted to create a template so it can utilized for any ML projects. The dataset we obtained for this project was a bit challenging because a lot of data cleaning, flattening and transformations were required to get the data in the required format. 
+
+We also performed feature enngineering in this dataset to get more predicitve value out of the features and built a pipeline, so it can be easily fed into different models. We tested five different models. They are: Linear Regression, XGBoost, Light GBM, Lasso and Ridge. The summary of all the models is shown below for your reference:
+
+
+
+XGBoost had the best performance with the lowest RMSE scores. We recommend using the XGBoost model to be tested with real time data so, the performance of the model can be identified in realtime. 
+
+### Future Considerations:
+
+- Due to the limited capacity of our Colab Notebook setup, we were unable to perform Cross Validation for XGBoost and Light GBM. We recommend to perform cross validation for these models and check the RMSE Scores. 
+
 
 ## 8. References
 
