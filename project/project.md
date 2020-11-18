@@ -223,12 +223,15 @@ The steps performed here is applicable for majority of the Machine Learning proj
 We also performed feature enngineering in this dataset to get more predicitve value out of the features and built a pipeline, so it can be easily fed into different models. We tested five different models. They are: Linear Regression, XGBoost, Light GBM, Lasso and Ridge. The summary of all the models is shown below for your reference:
 
 
+	![Model_Results](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/model_results_new.png)
+	**Figure - Model Results Summary** 
+
 
 XGBoost had the best performance with the lowest RMSE scores. We recommend using the XGBoost model to be tested with real time data so, the performance of the model can be identified in realtime. 
 
 ### Future Considerations:
 
-- Due to the limited capacity of our Colab Notebook setup, we were unable to perform Cross Validation for XGBoost and Light GBM. We recommend to perform cross validation for these models and check the RMSE Scores. 
+- Due to the limited capacity of our Colab Notebook setup, we were unable to perform Cross Validation for XGBoost and Light GBM. We recommend to perform cross validation for these models, check the RMSE Scores and potentially avoid overfitting, if any 
 
 
 ## 8. References
