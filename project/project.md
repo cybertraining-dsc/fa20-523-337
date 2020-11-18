@@ -19,7 +19,7 @@ Status: in progress
 - [ ] your tables are unreadable. There are different ways on how to do this. You can include the parameters as text and the rest as markdown table
 - [ ] hid from second author wrong
 - [ ] you are not looking at the output of the check report script some errors are listed there
-- [ ] the word below and above must never be used in a formal paper to refer to figures and tables
+- [ ] the word below and above must never be used in a formal paper to refer to figures and tables and sections, use numbers as we posted in piszza
 - [ ] This si not a ppt presentations. for example
 
   * Kaggle - Customer Revenue Prediction
