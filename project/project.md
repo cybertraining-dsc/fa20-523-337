@@ -7,7 +7,7 @@ Status: in progress
         
 - [ ] please follow our template
 - [ ] Please add references - Facing issues with adding reference. Need assitance
-- [X] Please correct the images with correct markdown syntax. 
+- [ ] Please correct the images with correct markdown syntax. 
 - [ ] usage of italic vs quotes
 - [ ] wrong indentation level when doing lists, student does not do markdown
 - [ ] wrong indentation while using paragraphs they must not be indented
