@@ -1,7 +1,10 @@
 # Online Store Customer Revenue Prediction
 
 [![Check Report](https://github.com/cybertraining-dsc/fa20-523-337/workflows/Check%20Report/badge.svg)](https://github.com/cybertraining-dsc/fa20-523-337/actions)
+[![Status](https://github.com/cybertraining-dsc/fa20-523-337/workflows/Status/badge.svg)](https://github.com/cybertraining-dsc/fa20-523-337/actions)
+Status: in progress
 
+        
 - [X] please follow our template
 - [ ] Please add references - Facing issues with adding reference. Need assitance
 - [X] Please correct the images with correct markdown syntax. 
