@@ -2,9 +2,9 @@
 
 [![Check Report](https://github.com/cybertraining-dsc/fa20-523-337/workflows/Check%20Report/badge.svg)](https://github.com/cybertraining-dsc/fa20-523-337/actions)
 
-- [ ] please follow our template
-- [ ] Please add references 
-- [ ] Please correct the images with correct markdown syntax. 
+- [X] please follow our template
+- [ ] Please add references - Facing issues with adding reference. Need assitance
+- [X] Please correct the images with correct markdown syntax. 
 
 Balaji Dhamodharan, bdhamodh@iu.edu, fa20-523-337
 Anantha Janakiraman, ajanakir@iu.edu, fa20-523-337
