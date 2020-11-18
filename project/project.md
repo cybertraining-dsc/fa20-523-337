@@ -76,13 +76,17 @@ The Target Variable is totals.transactionRevenue has the transaction value of ea
 
 ![Target Variable](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/y_after_transformation.png)  
 
+**Figure 2:** Target Variable
+
 - Exploratory Data Analysis
 
 	-	Browser
 		
 		The most popular browser is Google Chrome. Also, we noticed second best users were using safari browser and firefox was placed third
 		
-		![Browser Variable](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/device_browser.png)  
+		![Browser Variable](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/device_browser.png)
+
+		**Figure 3:** Browser Variable
 				
 	-	Device Category
 	
