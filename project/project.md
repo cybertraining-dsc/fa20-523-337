@@ -20,7 +20,12 @@ Status: in progress
 - [ ] hid from second author wrong
 - [ ] you are not looking at the output of the check report script some errors are listed there
 - [ ] the word below and above must never be used in a formal paper to refer to figures and tables
+- [ ] This si not a ppt presentations. for example
 
+  * Kaggle - Customer Revenue Prediction
+
+  is not a full sentence and must not be used to start a section
+  
 Balaji Dhamodharan, bdhamodh@iu.edu, fa20-523-337
 Anantha Janakiraman, ajanakir@iu.edu, fa20-523-???  
 
