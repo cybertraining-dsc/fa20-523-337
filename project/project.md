@@ -5,9 +5,17 @@
 Status: in progress
 
         
-- [X] please follow our template
+- [ ] please follow our template
 - [ ] Please add references - Facing issues with adding reference. Need assitance
 - [X] Please correct the images with correct markdown syntax. 
+- [ ] usage of italic vs quotes
+- [ ] wrong indentation level when doing lists, student does not do markdown
+- [ ] wrong indentation while using paragraphs they must not be indented
+- [ ] wrong indentation when using images, images must not be in bullet lists but stands long, images must be refered to in text as Figure x
+- [ ] missing empty line before captions
+- [ ] future considerations should be renamed to Limitations. 
+- [ ] there ar no : in headers such as in future considerations:
+- [ ] use grammerly
 
 Balaji Dhamodharan, bdhamodh@iu.edu, fa20-523-337
 Anantha Janakiraman, ajanakir@iu.edu, fa20-523-337
@@ -220,8 +228,7 @@ We tested several different Machine Learning Models as shown below. The results 
 - Report and document findings
 
 ## 7. Conclusion
-
-The steps performed here is applicable for majority of the Machine Learning projects. We wanted to create a template so it can utilized for any ML projects. The dataset we obtained for this project was a bit challenging because a lot of data cleaning, flattening and transformations were required to get the data in the required format. 
+ç for majority of the Machine Learning projects. We wanted to create a template so it can utilized for any ML projects. The dataset we obtained for this project was a bit challenging because a lot of data cleaning, flattening and transformations were required to get the data in the required format. 
 
 We also performed feature enngineering in this dataset to get more predicitve value out of the features and built a pipeline, so it can be easily fed into different models. We tested five different models. They are: Linear Regression, XGBoost, Light GBM, Lasso and Ridge. The summary of all the models is shown below for your reference:
 
