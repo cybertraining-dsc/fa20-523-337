@@ -65,7 +65,7 @@ The dataset we used is from the Kaggle Competition. The dataset contains two csv
 CITATIONS TO DATA MISSING
 
 
-The metrics we will use for this project is root mean squared error (RMSE). The root mean squared error function forms our objective/cost function which will be minimized to estimate the optimal parameters for our linear function through Gradient Descent. We will conduct multiple experiments to obtain convergence using different "number of iterations" value and other hyper-parameters (e.g. learning rate).
+The metrics we will use for this project is root mean squared error (RMSE). The root mean squared error function forms our objective/cost function which will be minimized to estimate the optimal parameters for our linear function through Gradient Descent. We will conduct multiple experiments to obtain convergence using different number of iterations value and other hyper-parameters (e.g. learning rate).
 
 RMSE is defined as:
 
@@ -174,12 +174,12 @@ The Target Variable is totals.transactionRevenue has the transaction value of ea
 	
 - Data Pre-Processing
 
-Data Pre-Processing is an important step to build a Machine Learning Model. The data pre-processing step typically consists of data cleaning, transformation, standardization and feature selection, so only the most cleaner and accurate data is fed to the models. The dataset we obtained for this project was noticed to contain several data issues such as missing values, less to no variance (zero variance) in the data and also identified the target variable not having random distribution.  The variables such as "totals_newVisits", "totals_bounces", "trafficSource_adwordsClickInfo_page", "trafficSource_isTrueDirect", "totals_bounces", "totals_newVisits" had missing values. We handled the missing values with "zeroes", so the ML algorithms doesn't face any issues. This is a very important step in building the Machine Learning Pipeline. 
+Data Pre-Processing is an important step to build a Machine Learning Model. The data pre-processing step typically consists of data cleaning, transformation, standardization and feature selection, so only the most cleaner and accurate data is fed to the models. The dataset we obtained for this project was noticed to contain several data issues such as missing values, less to no variance (zero variance) in the data and also identified the target variable not having random distribution.  The variables such as totals_newVisits, totals_bounces, trafficSource_adwordsClickInfo_page, trafficSource_isTrueDirect, totals_bounces, totals_newVisits had missing values. We handled the missing values with zeroes, so the ML algorithms doesn't face any issues. This is a very important step in building the Machine Learning Pipeline. 
 
 - Feature Engineering
 
 Feature Engineering is the process of extracting the hidden signals/features, so the model can use these features to increase the predictive power. This step is the fundamental difference between a good model and a bad model. Also, there is no one-size-fits all approach for Feature Engineering. It is extremely time consuming and requires a lot of domain knowledge as well. 
-For this project, we created sophisticated functions to extract date related values such as Month, Year, Data, Weekday, WeekofYear. We also noticed that browser and operating systems are redundant features. Instead of removing them, we combined them to create a combinational feature, so we believe this will increase the predictive power. We also calculated "mean", "sum" and "count" for pageviews and hits, so it can provide more powerful extraction of the feature to the model.
+For this project, we created sophisticated functions to extract date related values such as Month, Year, Data, Weekday, WeekofYear. We also noticed that browser and operating systems are redundant features. Instead of removing them, we combined them to create a combinational feature, so we believe this will increase the predictive power. We also calculated mean, sum and count for pageviews and hits, so it can provide more powerful extraction of the feature to the model.
 
 - Feature Selection
 
@@ -191,7 +191,7 @@ For this project, we dropped the features which had no variance in the data and 
 
 - Prepare the data
 
-Scikit learn has inbuilt libraries to handle Train/Test Split as part the "model_selection" package. We split the dataset randomly with 80% Training and 20% Testing datasets. 
+Scikit learn has inbuilt libraries to handle Train/Test Split as part the model_selection package. We split the dataset randomly with 80% Training and 20% Testing datasets. 
 
 - Model Algorithms and Optimization Methods
 
