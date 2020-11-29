@@ -206,7 +206,7 @@ LightGBM is a popular gradient boosting framework similar to XGBoost and is gain
 
 LightGBM Regression was the second best performing model in terms of RMSE Scores.  Also the training and test scores seems to be little different and so might have produce overfitting. I tested multiple rounds with different parameters, this was the best performing model overall.  
 	
-![lightgbm](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/lightgbm3new.png)
+![lightgbm](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/lighgbm3new.png)
 	
 **Figure 14:** LightGBM Model 
 	
