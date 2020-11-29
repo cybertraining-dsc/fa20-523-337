@@ -78,7 +78,7 @@ RMSE is defined as:
 
 ![Figure 2.1](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/loss.png)  
 
-CAPTION MISSING
+**Figure - RMSE**
 
 where y-hat is the natural log of the predicted revenue for a customer and y is the natural log of the actual summed revenue value plus one as seen below.
 
