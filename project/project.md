@@ -62,8 +62,8 @@ The objective of this exploration is to predict the natural log of total revenue
 
 As mentioned in the earlier sections, the dataset used in this model exploration is from Kaggle [^1]. The link to the dataset is provided below. The training contains more than 900K observations and based on the size of the dataset it would be ideal to use mini-batch or gradient descent optimization techniques to identify the coefficients that best describe the model. The target variable as observed in the dataset is a continuous variable which implies that the use case is a regression problem. As mentioned earlier, there are several machine learning techniques that can be explored for this type of problem including regression and ensemble methods with different parameter settings. The sparsity of potential features in the datasets indicates that multiple experimentations will be required to determine the best performing model. Also based on initial review of the datasets, it also observed that some of the categorical features exhibit low to medium cardinality and if these features are going to be retained in the final dataset used for training then it is important to choose the right encoding technique. 
 
-**bf**Train.csv, User transactions from August 1st, 2016 to August 1st, 2017 [^2]
-**bf**Test.csv, User transactions from August 2nd, 2017 to April 30th, 2018  [^2]
+**Train.csv** User transactions from August 1st, 2016 to August 1st, 2017 [^2]
+**Test.csv** User transactions from August 2nd, 2017 to April 30th, 2018  [^2]
 
 ### 2.1 Metrics
 
