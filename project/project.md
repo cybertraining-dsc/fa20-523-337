@@ -91,9 +91,6 @@ The CRISP-DM process methodology was followed in this project. The  high-level i
 
 **Figure - Project Methodology**
 
-
-THIS IS NOT PPT
-
 - Get Data
 
 The data was obtained from Kaggle Competition. Please find the details of the dataset in the above section
