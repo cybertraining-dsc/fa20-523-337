@@ -1,7 +1,7 @@
 Activity									|	Resource
 ------------									|	------------
 **Data Ingestion**												
- - Initial exploration in Kaggle to choose a problem and the gather dataset	|	Balaji & Anantha
+Initial exploration in Kaggle to choose a problem and the gather dataset	|	Balaji & Anantha
 Download dataset and push the files to GCS bucket				|	Balaji
 Explore different methods to flatten JSON and perform data type conversions	|	Balaji	
 Ingest data into Notebook runtime using Pandas					|	Balaji
