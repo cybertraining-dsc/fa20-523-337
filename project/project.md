@@ -11,7 +11,7 @@ Status: in progress
 - [ ] wrong indentation while using paragraphs they must not be indented
 - [x] wrong indentation when using images, images must not be in bullet lists but stands long, images must be refered to in text as Figure x
 - [ ] missing empty line before captions
-- [ ] future considerations should be renamed to Limitations. 
+- [x] future considerations should be renamed to Limitations. 
 - [ ] there ar no : in headers such as in future considerations:
 - [ ] use grammerly
 - [ ] your tables are unreadable. There are different ways on how to do this. You can include the parameters as text and the rest as markdown table
@@ -289,7 +289,7 @@ As part of this project a few features were engineered and included in the train
 
 #### Outcome of Experiments
 
-As described in earlier sections, multiple modeling techniques were explored as part of this project like Linear regression, gradient boosting algorithms and linear regression regularization techniques. The techniques were explored with basic parameter setting and based on the outcome of those experiments, the hyper parameters were tuned using grid search to obtain the best estimator evaluated on rmse. Also, during grid search K-Fold cross validation of training data was used and the cross validated results were examined through a results table. The fit_intercept flag played a significant role resulting in an optimal error. As part of the different experimentations that were performed, random forest algorithm was also explored but it suffered performance issues and it seemed like it would require more iterations to converge which is why it was dropped from our results and further exploration. Although random forest was not explored, gradient boosting techniques were part of the experimentations and the best rmse from XGBoost. The LightGBM regressor was also explored with different parameter settings but it did not produce better rmse score than XGBoost. 
+Multiple modeling techniques were explored as part of this project like Linear regression, gradient boosting algorithms and linear regression regularization techniques. The techniques were explored with basic parameter setting and based on the outcome of those experiments, the hyper parameters were tuned using grid search to obtain the best estimator evaluated on rmse. Also, during grid search K-Fold cross validation of training data was used and the cross validated results were examined through a results table. The fit_intercept flag played a significant role resulting in an optimal error. As part of the different experimentations that were performed, random forest algorithm was also explored but it suffered performance issues and it seemed like it would require more iterations to converge which is why it was dropped from our results and further exploration. Although random forest was not explored, gradient boosting techniques were part of the experimentations and the best rmse from XGBoost. The LightGBM regressor was also explored with different parameter settings but it did not produce better rmse score than XGBoost. 
 
 In the case of XGBoost, there was improvement to the rmse score as different tree depths, feature fraction, learning rate, number of children, bagging fraction, sub-sample were explored. There was significant improvement to the error metric when these parameters were adjusted in an intuitive way. Also, linear regression with regularization techniques were explored and although there was some improvement to the error metric compared to the basic linear regression model they did not perform better than the gradient boosting method that was explored. So, based on different explorations and experimentations we are able to reasonably conclude that gradient boosting technique performed better for the given problem setting and generated the best rmse score. Based on the evaluation results of XGBoost on the dataset used, the recommendation would be to test the XGBoost model with real time data and the performance of the model can be evaluated in real-time scenario too and additionally, if needed, hyper parameter tuning can be performed on the XGBoost model specifically for the real-time scenario.
 
@@ -300,7 +300,7 @@ We also performed feature engineering in this dataset to get more predicitve val
 **Figure 17:** Model Results Summary 
 
 
-### Future Considerations
+#### Limitations
 
 Due to the limited capacity of our Colab Notebook setup, we were unable to perform Cross Validation for XGBoost and Light GBM. We recommend to perform cross validation for these models, check the RMSE Scores and potentially avoid overfitting, if any. The tree based models performed well in this dataset. In the future try additional tree based models like Random Forest to evaluate their performance
 
