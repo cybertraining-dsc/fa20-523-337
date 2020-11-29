@@ -279,7 +279,6 @@ We also performed feature engineering in this dataset to get more predictive val
 
 **Figure 17:** Model Results Summary 
 
-
 ### 7.4 Limitations:
 
 Due to the limited capacity of our Colab Notebook setup, we were unable to perform Cross Validation for XGBoost and Light GBM. We recommend to perform cross validation for these models, check the RMSE Scores and potentially avoid overfitting, if any. The tree based models performed well in this dataset. In the future try additional tree based models like Random Forest to evaluate their performance
