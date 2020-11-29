@@ -7,17 +7,17 @@ Status: in progress
 - [x] Please add references - Facing issues with adding reference. Need assistance
 - [x] Please correct the images with correct markdown syntax. 
 - [x] usage of italic vs quotes
-- [ ] wrong indentation level when doing lists, student does not do markdown
-- [ ] wrong indentation while using paragraphs they must not be indented
+- [x] wrong indentation level when doing lists, student does not do markdown
+- [x] wrong indentation while using paragraphs they must not be indented
 - [x] wrong indentation when using images, images must not be in bullet lists but stands long, images must be refered to in text as Figure x
-- [ ] missing empty line before captions
+- [x] missing empty line before captions
 - [x] future considerations should be renamed to Limitations. 
-- [ ] there are no : in headers such as in future considerations:
-- [ ] use grammerly
-- [ ] your tables are unreadable. There are different ways on how to do this. You can include the parameters as text and the rest as markdown table
-- [ ] hid from second author wrong
-- [ ] you are not looking at the output of the check report script some errors are listed there
-- [ ] the word below and above must never be used in a formal paper to refer to figures and tables and sections, use numbers as we posted in piszza
+- [x] there are no : in headers such as in future considerations:
+- [x] use grammerly
+- [x] your tables are unreadable. There are different ways on how to do this. You can include the parameters as text and the rest as markdown table
+- [x] hid from second author wrong
+- [] you are not looking at the output of the check report script some errors are listed there
+- [x] the word below and above must never be used in a formal paper to refer to figures and tables and sections, use numbers as we posted in piszza
 - [ ] bullet lists must not be used in substitution for subsections. You could **bf**. them and do not use a bullet similar to LaTeX paragraphs if you do not want to use subsections.SUbsections show up in the TOC, **bf**. does not
 - [ ] no explanation is provided what teh different regressiosn are, no citations provided
 - [ ] all figures must have captions (below)
@@ -87,7 +87,7 @@ The CRISP-DM process methodology was followed in this project. The  high-level i
 
 ### 3.1 Load Data
 
-The data we obtained from Kaggle was over 2.6 GB (for Train and Test). As the size of the dataset was large, I created a storage bucket in GCP to host the data. The URL is provided above for your reference.Also for this project we are using only the Train data to build our models and test the results because the real end goal is to test the effectiveness of algorithm. Since the test set doesnt contain the Target Variable (rightly so!), we won't be consuming the test set for our analysis.	
+The data we obtained from Kaggle was over 2.6 GB (for Train and Test). As the size of the dataset was large, I created a storage bucket in GCP to host the data. Also for this project we are using the Train dataset only to build our models and test the results because the real end goal is to test the effectiveness of algorithm. Since the test set doesn't contain the Target Variable (rightly so!), we won't be consuming the test set for our analysis.	
 
 ### 3.2 Data Exploration
 
@@ -178,14 +178,12 @@ We tested several different Machine Learning Models as shown below. The results 
 
 Linear regression is a supervised learning model that follows a linear approach in that it assumes a linear relationship between one ore more predictor variables (x) and a single target or response variable (y). The target variable can be calculated as a linear combination of the predictors or in other words the target is the calculated by weighted sum of the inputs and bias where the weighted is estimated through different optimization techniques. Linear regression is referred to as simple linear regression when there is only one predictor variable involved and referred to as multiple linear regression when there is more than one predictor variable is involved. The error between the predicted output and the ground truth is generally calculated using RMSE (root mean squared error). This is one of the classic modeling techniques that will be explored in this project because the target variable (revenue per customer) is a real valued continuous output and exhibits a significant linear relationship with the independent variables or the input variables.
 
-In the exploration, SKLearn Linear Regression performed well overall. We used 5 fold Cross validation and the best RMSE Score for this model observed was: 1.89. The training and test RMSE error values are very close indicating that there is no overfitting the data.
+In the exploration, SKLearn Linear Regression performed well overall. We used 5 fold Cross validation and the best RMSE Score for this model observed was: 1.89. As shown in the Figure 12, the training and test RMSE error values are very close indicating that there is no overfitting the data.
 	
 ![Linear Regression](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/linear_regression3.png)	
 	
 **Figure 12:** Linear Regression Model 
 	
-REFERNCE IN TEXT TO Figure 1 missing
-
 #### 3.5.2 XGBoost Regressor
 
 XGBoost regression is a gradient boosting regression technique and one of the popular gradient boosting frameworks that exists today. It follows the ensemble principle where a collection of weak learners improves the prediction accuracy. The prediction in the current step S is weighed based on the outcomes from the previous step S-1. Weak learning is slightly better than random learning and that is one of the key strengths of gradient boosting technique. The XGBoost algorithm was explored for this project for several reasons including it offers built-in regularization that helps avoid overfitting, it can handle missing values effectively and it also does cross validation automatically. The feature space for the dataset that we are using is sparse and believe the potential to overfit the data is high which is one of the primary reasons for exploring XGBoost.
@@ -279,7 +277,6 @@ Due to the limited capacity of our Colab Notebook setup, we were unable to perfo
 ## 8. Previous Explorations
 
 The Online GStore customer revenue prediction problem is a Kaggle competition with more than 4100 entries. It is one of the popular challenges in Kaggle with a prize money of $45,000. Although as a team we did not make it to the top in the leader board, the challenge gave us a huge opportunity to explore different methods, techniques, tools and resources. The one important difference between many of the previous of explorations versus what we achieved is the number of different machine learning algorithms that we explored and observed the performance. We reviewed many submissions in Kaggle and found only a very few entries exploring different parameter settings and making intuitive adjustments to them to make the model perform at an optimum level like what we accomplished. The other uniqueness that we brought to our submission was identifying techniques that offered good performance and consumed less system resources in terms of operationalization. We will continue to do further exploration and attempt other techniques to identify the best performing model.
-
 
 ## 9. References
 
