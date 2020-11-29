@@ -257,15 +257,15 @@ In this project we used Python and Google Colab Jupyter Notebook. We used severa
 
 As a project team the intention was to create a template that can be utilized for any ML project. The dataset that was used for this project was challenging in a way that it required a lot of data cleaning, flattening and transformation to get the data into the required format. 
 
-### 7.1 Model Pipeline:
+### 7.1 Model Pipeline
 
 In this project, multiple regression and tree based models from scikit learn library were explored with various hyper parameter setting and other methods like the lightGBM. The goal of the model pipeline was to explore and examine data, identify data pre-processing methods, imputation strategies, derive features and try different feature extraction methods was to perform different experiments with different parameter setting and identify the optimized with low RMSE that can be operationalized in Production. The parameters were explored within the boundary of this problem setting using different techniques.
 
-### 7.2 Feature Exploration and Pre-Processing:
+### 7.2 Feature Exploration and Pre-Processing
 
 As part of this project a few features were engineered and included in the training dataset. The feature importance visualizations that were generated after the model training process indicate that these engineered features were part of the top 30% of high impact features and they contributed reasonably to improving the overall accuracy of the model. We as a team discussed on the possibility of including few other potential features that could be derived from the dataset during additional experimentation phase and included those additional features as well to the dataset that was used during model training. Although these features did not contribute largely to reducing the error it gave us as a team an opportunity to share ideas and methods to develop these new features. Also, during the discussions we also tried to explore other imputation strategies, identify more outliers and tried different encoding techniques for categorical variables and ultimately determined that label encoder or ordinal encoder is the best way forward. We also tried to exclude some of the low importance features and retrained the model to validate if the same or better RMSE value could be achieved.
 
-### 7.3 Outcome of Experiments:
+### 7.3 Outcome of Experiments
 
 Multiple modeling techniques were explored as part of this project like Linear regression, gradient boosting algorithms and linear regression regularization techniques. The techniques were explored with basic parameter setting and based on the outcome of those experiments, the hyper parameters were tuned using grid search to obtain the best estimator evaluated on RMSE. Also, during grid search K-Fold cross validation of training data was used and the cross validated results were examined through a results table. The fit_intercept flag played a significant role resulting in an optimal error. As part of the different experimentations that were performed, random forest algorithm was also explored but it suffered performance issues and it seemed like it would require more iterations to converge which is why it was dropped from our results and further exploration. Although random forest was not explored, gradient boosting techniques were part of the experimentations and the best RMSE from XGBoost. The LightGBM regressor was also explored with different parameter settings but it did not produce better RMSE score than XGBoost. 
 
@@ -277,7 +277,7 @@ We also performed feature engineering in this dataset to get more predictive val
 
 **Figure 17:** Model Results Summary 
 
-### 7.4 Limitations:
+### 7.4 Limitations
 
 Due to the limited capacity of our Colab Notebook setup, we were unable to perform Cross Validation for XGBoost and Light GBM. We recommend to perform cross validation for these models, check the RMSE Scores and potentially avoid overfitting, if any. The tree based models performed well in this dataset. In the future try additional tree based models like Random Forest to evaluate their performance
 
