@@ -86,10 +86,6 @@ The CRISP-DM process methodology was followed in this project. The  high-level i
 
 **Figure 2: Project Methodology**
 
-- Get Data
-
-The data was obtained from Kaggle Competition. Please find the details of the dataset in the above section
-
 - Load Data
 	- [Kaggle - Customer Revenue Prediction - Train Dataset](https://storage.googleapis.com/gstoretrain/train.csv)
 	- [Kaggle - Customer Revenue Prediction - Test Dataset](https://storage.googleapis.com/gstoretrain/test.csv)
