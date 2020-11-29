@@ -86,14 +86,14 @@ The CRISP-DM process methodology was followed in this project. The  high-level i
 
 **Figure 2:** Project Methodology
 
-### 3.1 Load Data:
+### 3.1 Load Data
 
 The data we obtained from Kaggle was over 2.6 GB (for Train and Test). As the size of the dataset was large, I created a storage bucket in GCP to host the data. The URL is provided above for your reference.Also for this project we are using only the Train data to build our models and test the results because the real end goal is to test the effectiveness of algorithm. Since the test set doesnt contain the Target Variable (rightly so!), we won't be consuming the test set for our analysis.	
 
 	- [Kaggle - Customer Revenue Prediction - Train Dataset](https://storage.googleapis.com/gstoretrain/train.csv)
 	- [Kaggle - Customer Revenue Prediction - Test Dataset](https://storage.googleapis.com/gstoretrain/test.csv)	
 
-### 3.2 Data Exploration:
+### 3.2 Data Exploration
 
 The dataset obtained for this project is large.  It had contained over 900k records. The dataset also contained 12 Independent Variable and 1 Dependent variable. The Dependent Variable is totals.transactionRevenue.  The end goal of this project is to predict the revenue of the Online Store Customer as close as possible.
 
@@ -104,82 +104,82 @@ The dataset obtained for this project is large.  It had contained over 900k reco
 **Figure 3:** Target Variable
  
 
-- Exploratory Data Analysis
+#### 3.2.1 Exploratory Data Analysis
 
-	-	Browser
+Browser
 		
-		The most popular browser is Google Chrome. Also, we noticed second and third best users were using safari and firefox respectively
+The most popular browser is Google Chrome. Also, we noticed second and third best users were using safari and firefox respectively
 		
-		![Browser Variable](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/device_browser.png)		
+![Browser Variable](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/device_browser.png)		
 				
-		**Figure 4:** Browser Variable
+**Figure 4:** Browser Variable
 		
-	-	Device Category
+Device Category
 	
-		Almost 70% of users were accessing online store via desktop
+Almost 70% of users were accessing online store via desktop
 		
-		![Device Category Variable](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/device_category.png)		
+![Device Category Variable](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/device_category.png)		
 		
-		**Figure 5:** Device Category Variable
+**Figure 5:** Device Category Variable
 		
-	-	OperatingSystem
+OperatingSystem
 		
-		Windows is the popular operating system among the desktop users. However, among the mobile users, what's interesting is, almost equal number of ios users (slightly lower) as android users accessed google play store. The reason why this is interesting is because, google play store is primarily used by android users and ios users almost always use Apple Store for downloading apps to their mobile devices. So it is interesting to know, almost equal number of ios users visit google store as well.
+Windows is the popular operating system among the desktop users. However, among the mobile users, what's interesting is, almost equal number of ios users (slightly lower) as android users accessed google play store. The reason why this is interesting is because, google play store is primarily used by android users and ios users almost always use Apple Store for downloading apps to their mobile devices. So it is interesting to know, almost equal number of ios users visit google store as well.
 		
-		![OperatingSystem](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/device_operating_system.png)
+![OperatingSystem](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/device_operating_system.png)
 			
-		**Figure 6:** Operating System	
+**Figure 6:** Operating System	
 		
-	-	GeoNetwork-City
+GeoNetwork-City
 		
-		Mountain View, California tops the cities list for the users who accessed online store. However in the top 10 cities, 4 cities are from California. 
+Mountain View, California tops the cities list for the users who accessed online store. However in the top 10 cities, 4 cities are from California. 
 		
-		![GeoNetwork-City](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/geo_network_city.png)  
+![GeoNetwork-City](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/geo_network_city.png)  
 				
-		**Figure 7:** GeoNetwork City	
+**Figure 7:** GeoNetwork City	
 		
-	-	GeoNetwork-Country
+GeoNetwork-Country
 		
-		Customers from US are way ahead of other customers from different countries. May be this could be due to the fact that online store data that was provided to us was pulled from US Google Play Store (Possible BIAS!!!).
+Customers from US are way ahead of other customers from different countries. May be this could be due to the fact that online store data that was provided to us was pulled from US Google Play Store (Possible BIAS!!!).
 		
-		![GeoNetwork-Country](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/geo_network_country.png)		
+![GeoNetwork-Country](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/geo_network_country.png)		
 	
-		**Figure 8:** GeoNetwork Country
+**Figure 8:** GeoNetwork Country
 		
-	-	GeoNetwork-Region
+GeoNetwork-Region
 		
-		We are already aware that majority of the customers are from US, so America region tops the list.
+We are already aware that majority of the customers are from US, so America region tops the list.
 		
-		![GeoNetwork-Region](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/geo_network_continent.png)
+![GeoNetwork-Region](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/geo_network_continent.png)
 		
-		**Figure 9:** GeoNetwork Region
+**Figure 9:** GeoNetwork Region
 		
-	-	GeoNetwork-Metro
+GeoNetwork-Metro
 		
-		SFO tops the list for all metro cities, followed by New York and then London.
+SFO tops the list for all metro cities, followed by New York and then London.
 		
-		![GeoNetwork-Metro](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/geo_network_metro.png)	
+![GeoNetwork-Metro](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/geo_network_metro.png)	
 		
-		**Figure 10:** GeoNetwork Region
+**Figure 10:** GeoNetwork Region
 		
-	-	Ad Sources
+Ad Sources
 	
-		Google Merchandise and Google Online Store are the top sources where the traffic is coming from to the Online Store. 
+Google Merchandise and Google Online Store are the top sources where the traffic is coming from to the Online Store. 
 		
-		![GeoNetwork-Metro](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/traffic_source_adcontent.png)	
+![GeoNetwork-Metro](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/traffic_source_adcontent.png)	
 		
-		**Figure 11:** Ad Sources
+**Figure 11:** Ad Sources
 	
-- Data Pre-Processing
+Data Pre-Processing
 
 Data Pre-Processing is an important step to build a Machine Learning Model. The data pre-processing step typically consists of data cleaning, transformation, standardization and feature selection, so only the most cleaner and accurate data is fed to the models. The dataset we obtained for this project was noticed to contain several data issues such as missing values, less to no variance (zero variance) in the data and also identified the target variable not having random distribution.  The variables such as totals_newVisits, totals_bounces, trafficSource_adwordsClickInfo_page, trafficSource_isTrueDirect, totals_bounces, totals_newVisits had missing values. We handled the missing values with zeroes, so the ML algorithms doesn't face any issues. This is a very important step in building the Machine Learning Pipeline. 
 
-- Feature Engineering
+Feature Engineering
 
 Feature Engineering is the process of extracting the hidden signals/features, so the model can use these features to increase the predictive power. This step is the fundamental difference between a good model and a bad model. Also, there is no one-size-fits all approach for Feature Engineering. It is extremely time consuming and requires a lot of domain knowledge as well. 
 For this project, we created sophisticated functions to extract date related values such as Month, Year, Data, Weekday, WeekofYear. We also noticed that browser and operating systems are redundant features. Instead of removing them, we combined them to create a combined feature and believe this will increase the predictive power. We also calculated mean, sum and count for pageviews and hits, so it can provide more powerful extraction of the feature to the model.
 
-- Feature Selection
+Feature Selection
 
 Feature Selection refers to selection of features in your data that would improve your machine learning model. There is subtle variation between Feature Selection and Feature Engineering. The Feature Engineering technique is designed to extract more feature from the dataset and the feature selection technique allows only relevant features into the dataset. Also, how do we know what are the relevant features? There are several methodologies and techniques that are developed over the years but there is no one-size-fits-all methodology. 
 
@@ -187,15 +187,15 @@ Feature Selection like Feature Engineering is more of an art than science. There
 
 For this project, we dropped the features which had no variance in the data and the features that had a lot of null values as well. These features would have not added any value to the dataset. Also, depending on the final result, we can try different strategies in the future to improve the performance of the model.
 
-- Prepare the data
+Prepare the data
 
 Scikit learn has inbuilt libraries to handle Train/Test Split as part the model_selection package. We split the dataset randomly with 80% Training and 20% Testing datasets. 
 
-- Model Algorithms and Optimization Methods
+Model Algorithms and Optimization Methods
 
 We tested several different Machine Learning Models as shown below. The results of each step and their settings are explained in their respective sections:
 
-- Linear Regression Model
+Linear Regression Model
 
 Linear regression is a supervised learning model that follows a linear approach in that it assumes a linear relationship between one ore more predictor variables (x) and a single target or response variable (y). The target variable can be calculated as a linear combination of the predictors or in other words the target is the calculated by weighted sum of the inputs and bias where the weighted is estimated through different optimization techniques. Linear regression is referred to as simple linear regression when there is only one predictor variable involved and referred to as multiple linear regression when there is more than one predictor variable is involved. The error between the predicted output and the ground truth is generally calculated using RMSE (root mean squared error). This is one of the classic modeling techniques that will be explored in this project because the target variable (revenue per customer) is a real valued continuous output and exhibits a significant linear relationship with the independent variables or the input variables.
 
@@ -207,7 +207,7 @@ In the exploration, SKLearn Linear Regression performed well overall. We used 5 
 	
 REFERNCE IN TEXT TO Figure 1 missing
 
-- XGBoost Regressor
+XGBoost Regressor
 
 XGBoost regression is a gradient boosting regression technique and one of the popular gradient boosting frameworks that exists today. It follows the ensemble principle where a collection of weak learners improves the prediction accuracy. The prediction in the current step S is weighed based on the outcomes from the previous step S-1. Weak learning is slightly better than random learning and that is one of the key strengths of gradient boosting technique. The XGBoost algorithm was explored for this project for several reasons including it offers built-in regularization that helps avoid overfitting, it can handle missing values effectively and it also does cross validation automatically. The feature space for the dataset that we are using is sparse and believe the potential to overfit the data is high which is one of the primary reasons for exploring XGBoost.
     
@@ -217,7 +217,7 @@ XGBoost Linear Regression performed very well. It was our top performing model w
 	
 **Figure 13:** XGBoost Model 	
 	
-- LightGBM Regressor	
+LightGBM Regressor	
 
 LightGBM is a popular gradient boosting framework similar to XGBoost and is gaining popularity in the recent days. The important difference between lightGBM and other gradient boosting frameworks is that LightGBM grows the tree vertically or in other words it grows the tree leafwise compared to other frameworks where the trees grow horizontally. In this project the lightGBM framework was experimented primarily because this framework works well on large dataset with more than 10K observations. The algorithm also has a high throughput while using reasonably less memory but there is one problem with overfitting the data which we have controlled in our exploration using appropriate hyper parameter setting and optimized the performance.
 
@@ -227,7 +227,7 @@ LightGBM Regression was the second best performing model in terms of RMSE Scores
 	
 **Figure 14:** LightGBM Model 
 	
-- Lasso Regression
+Lasso Regression
 
 Lasso is a regression technique that uses L1 regularization. In statistics, lasso regression is a method to do automatic variable selection and regularization to improve prediction accuracy and performance of the statistical model. Lasso regression by nature makes the coefficient for some of the variables zero meaning these variables are automatically eliminated from the modeling process. The L1 regularization parameter helps control overfitting and will need to be explored for a range of values for the specific problem. When the regularization penalty tends to be zero there is no regularization, and the loss function is mostly influenced by the squared loss and in contrary if the regularization penalty tends to be closer to infinity then the objective function is mostly influenced by the regularization part. It is always ideal to explore a range of values for the regularization penalty to improve the accuracy and avoid overfitting. 
 
@@ -239,7 +239,7 @@ Lasso performed a bit better than baseline model. However, XGBoost seemed to hav
 	
 **Figure 15:** Lasso Model 
 
-- Ridge Regressor
+Ridge Regressor
 
 Ridge is a regression technique that uses L2 regularization. Ridge regression does not offer automatic variable selection in the sense that it is not make the weights zero on any of the variable used in the model and the regularization term in a ridge regression is slightly different than the lasso regression. The regularization term is the sum of the square of coefficients multiplied by the penalty whereas in lasso it is the sum of the absolute value of the coefficients. The regularization term is a gentle trade-off between fitting the model and overfitting the model and like in lasso it helps improve prediction accuracy as well as performance of the statistical model. The L2 regularization parameter helps control overfitting and will need to be explored for a range of values for the specific problem. The regularization parameter also helps reduce multicollinearity in the model. Similar to Lasso, when the regularization penalty tends to be zero there is no regularization, and the loss function is mostly influenced by the squared loss and in contrary if the regularization penalty tends to be closer to infinity then the objective function is mostly influenced by the regularization part. It is always ideal to explore a range of values for the regularization penalty to improve the accuracy and avoid overfitting. 
 
