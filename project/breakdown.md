@@ -1,7 +1,7 @@
 Activity									|	Resource
 ------------									|	------------
 **Data Ingestion**												
-Initial exploration in Kaggle to choose a problem and the gather dataset	|	Balaji & Anantha
+Initial exploration in Kaggle to choose a problem and gather the dataset	|	Balaji & Anantha
 Download dataset and push the files to GCS bucket				|	Balaji
 Explore different methods to flatten JSON and perform data type conversions	|	Balaji	
 Ingest data into Notebook runtime using Pandas					|	Balaji
@@ -50,7 +50,7 @@ Documenting results and the format for displaying results			|	Anantha & Balaji
 Feature importance XGBoost Regressor						|	Anantha
 Feature importance LightGBM Regressor						|	Balaji
 Hyperparameter tuning and additional experimentation				|	Anantha & Balaji
-(Did discussions via Zoom calls & explored different approaches)		|
+(Did discussions via Zoom calls & explored different approaches)		
 **Project Report**								
 Project	Abstract								|	Anantha
 Introduction									|	Balaji
