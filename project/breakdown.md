@@ -5,7 +5,7 @@ Initial exploration in Kaggle to choose a problem and the right dataset		|	Balaj
 Download dataset and push the files to GCS bucket				|	Balaji
 Explore different methods to flatten JSON and perform data type conversions 	|	Balaji	
 Ingest data into Notebook runtime using Pandas					|	Balaji
-**Exploratory Data Analysis**							|
+**Exploratory Data Analysis**							
 Investigate basic statistics of data						|	Balaji
 Basic data exploration on the full dataset					|	Balaji
 Sweetviz exploratory analysis on the full dataset				|	Balaji
@@ -20,21 +20,21 @@ Total New visits distribution							|	Anantha
 Total Hits distribution								|	Anantha
 Total Page views distribution							|	Anantha
 Traffic sources distribution (Adcontent, Medium)				|	Anantha
-**Data Pre-processing**								|
+**Data Pre-processing**						 		
 Impute missing values (6 features)						|	Anantha
 Dropping columns with constant variance						|	Anantha
 Dropping columns with mostly null values and only one not null value 		|	Anantha
 Prepare target variable								|	Anantha
 Build Dataframe Selector class							|	Anantha
 Build Attributes Pre-process class						|	Anantha
-**Feature Engineering**								|
+**Feature Engineering**								
 Build Categorical Encoder Class							|	Anantha
 Extract date related features 							|	Anantha
 Fix data format for few feature variables					|	Anantha
 Combine feature variables for enhanced predictive power				|	Anantha
 Create mean, sum, max, min and variance for web statistics grouped by day	|	Anantha
 Create mean, sum, max, min and variance for web statistics grouped by n/w domain|	Anantha
-**Model Training and Evaluation**						|
+**Model Training and Evaluation**						
 Building the full sklearn pipeline						|	Balaji
 Linear Regression model - Cross validation using Grid Search			|	Balaji
 Linear Regression model testing and evaluation					|	Balaji
@@ -46,12 +46,12 @@ XGBoost Regressor model training						|	Anantha
 XGBoost Regressor model testing and evaluation					|	Anantha
 Benchmarking throughout the code						|	Balaji
 Documenting results and the format for displaying results			|	Anantha & Balaji
-**Feature Importance visualization and Additional fine tuning**			|
+**Feature Importance visualization and Additional fine tuning**			
 Feature importance XGBoost Regressor						|	Anantha
 Feature importance LightGBM Regressor						|	Balaji
 Hyperparameter tuning and additional experimentation				|	Anantha & Balaji
 (Did discussions via Zoom calls & explored different approaches)		|
-**Project Report**								|
+**Project Report**								
 Project	Abstract								|	Anantha
 Introduction									|	Balaji
 Datasets & Metrics								|	Anantha
