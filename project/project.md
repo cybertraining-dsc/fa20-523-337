@@ -201,9 +201,8 @@ We tested several different Machine Learning Models as shown below. The results 
 Linear regression is a supervised learning model that follows a linear approach in that it assumes a linear relationship between one ore more predictor variables (x) and a single target or response variable (y). The target variable can be calculated as a linear combination of the predictors or in other words the target is the calculated by weighted sum of the inputs and bias where the weighted is estimated through different optimization techniques. Linear regression is referred to as simple linear regression when there is only one predictor variable involved and referred to as multiple linear regression when there is more than one predictor variable is involved. The error between the predicted output and the ground truth is generally calculated using RMSE (root mean squared error). This is one of the classic modeling techniques that will be explored in this project because the target variable (revenue per customer) is a real valued continuous output and exhibits a significant linear relationship with the independent variables or the input variables.
 
 In the exploration, SKLearn Linear Regression performed well overall. We used 5 fold Cross validation and the best RMSE Score for this model observed was: 1.89. The training and test rmse error values are very close indicating that there is no overfitting the data.
-
 	
-![Linear Regression](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/linear_regression2.png)	
+![Linear Regression](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/linear_regression3.png)	
 	
 **Figure 12:** Linear Regression Model 
 	
@@ -217,8 +216,7 @@ XGBoost Linear Regression performed very well. It was our top performing model w
 		
 ![XGBoost](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/xgboost2.png)
 	
-**Figure 13:** XGBoost Model 
-	
+**Figure 13:** XGBoost Model 	
 	
 - LightGBM Regressor	
 
