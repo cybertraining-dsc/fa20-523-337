@@ -66,7 +66,7 @@ As mentioned in the earlier sections, the dataset used in this model exploration
 - Train.csv, User transactions from August 1st, 2016 to August 1st, 2017 [^2]
 - Test.csv, User transactions from August 2nd, 2017 to April 30th, 2018  [^2]
 
-#### Metrics
+### 2.1 Metrics
 
 The metrics used for evaluation in this analysis is the root mean squared error (RMSE). The root mean squared error function forms the objective/cost function which will be minimized to estimate optimal parameters for the linear function using Gradient Descent. The plan is to conduct multiple experiments with different iterations to obtain convergence and try different hyper-parameters (e.g. learning rate).
 
