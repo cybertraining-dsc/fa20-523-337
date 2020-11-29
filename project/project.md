@@ -203,7 +203,7 @@ Linear regression is a supervised learning model that follows a linear approach 
 In the exploration, SKLearn Linear Regression performed well overall. We used 5 fold Cross validation and the best RMSE Score for this model observed was: 1.89. The training and test rmse error values are very close indicating that there is no overfitting the data.
 
 	
-![Linear Regression](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/linear_regression1.png)	
+![Linear Regression](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/linear_regression2.png)	
 	
 **Figure 12:** Linear Regression Model 
 	
@@ -215,7 +215,7 @@ XGBoost regression is a gradient boosting regression technique and one of the po
     
 XGBoost Linear Regression performed very well. It was our top performing model with the lowest RMSE error of 1.619. Also the training and test scores are reasonably close and it doesn't look like there was the problem of overfitting the training data. We tested multiple rounds with different parameters, this was the best performing model overall. 
 		
-![XGBoost](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/xgboost1.png)
+![XGBoost](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/xgboost2.png)
 	
 **Figure 13:** XGBoost Model 
 	
