@@ -176,11 +176,11 @@ Prepare the data
 
 Scikit learn has inbuilt libraries to handle Train/Test Split as part the model_selection package. We split the dataset randomly with 80% Training and 20% Testing datasets. 
 
-### 3.4 Model Algorithms and Optimization Methods
+### 3.5 Model Algorithms and Optimization Methods
 
 We tested several different Machine Learning Models as shown below. The results of each step and their settings are explained in their respective sections:
 
-#### 3.4.1 Linear Regression Model
+#### 3.5.1 Linear Regression Model
 
 Linear regression is a supervised learning model that follows a linear approach in that it assumes a linear relationship between one ore more predictor variables (x) and a single target or response variable (y). The target variable can be calculated as a linear combination of the predictors or in other words the target is the calculated by weighted sum of the inputs and bias where the weighted is estimated through different optimization techniques. Linear regression is referred to as simple linear regression when there is only one predictor variable involved and referred to as multiple linear regression when there is more than one predictor variable is involved. The error between the predicted output and the ground truth is generally calculated using RMSE (root mean squared error). This is one of the classic modeling techniques that will be explored in this project because the target variable (revenue per customer) is a real valued continuous output and exhibits a significant linear relationship with the independent variables or the input variables.
 
@@ -192,7 +192,7 @@ In the exploration, SKLearn Linear Regression performed well overall. We used 5 
 	
 REFERNCE IN TEXT TO Figure 1 missing
 
-#### 3.4.2 XGBoost Regressor
+#### 3.5.2 XGBoost Regressor
 
 XGBoost regression is a gradient boosting regression technique and one of the popular gradient boosting frameworks that exists today. It follows the ensemble principle where a collection of weak learners improves the prediction accuracy. The prediction in the current step S is weighed based on the outcomes from the previous step S-1. Weak learning is slightly better than random learning and that is one of the key strengths of gradient boosting technique. The XGBoost algorithm was explored for this project for several reasons including it offers built-in regularization that helps avoid overfitting, it can handle missing values effectively and it also does cross validation automatically. The feature space for the dataset that we are using is sparse and believe the potential to overfit the data is high which is one of the primary reasons for exploring XGBoost.
     
@@ -202,7 +202,7 @@ XGBoost Linear Regression performed very well. It was our top performing model w
 	
 **Figure 13:** XGBoost Model 	
 	
-#### 3.4.3 LightGBM Regressor	
+#### 3.5.3 LightGBM Regressor	
 
 LightGBM is a popular gradient boosting framework similar to XGBoost and is gaining popularity in the recent days. The important difference between lightGBM and other gradient boosting frameworks is that LightGBM grows the tree vertically or in other words it grows the tree leafwise compared to other frameworks where the trees grow horizontally. In this project the lightGBM framework was experimented primarily because this framework works well on large dataset with more than 10K observations. The algorithm also has a high throughput while using reasonably less memory but there is one problem with overfitting the data which we have controlled in our exploration using appropriate hyper parameter setting and optimized the performance.
 
@@ -212,7 +212,7 @@ LightGBM Regression was the second best performing model in terms of RMSE Scores
 	
 **Figure 14:** LightGBM Model 
 	
-#### 3.4.4 Lasso Regression
+#### 3.5.4 Lasso Regression
 
 Lasso is a regression technique that uses L1 regularization. In statistics, lasso regression is a method to do automatic variable selection and regularization to improve prediction accuracy and performance of the statistical model. Lasso regression by nature makes the coefficient for some of the variables zero meaning these variables are automatically eliminated from the modeling process. The L1 regularization parameter helps control overfitting and will need to be explored for a range of values for the specific problem. When the regularization penalty tends to be zero there is no regularization, and the loss function is mostly influenced by the squared loss and in contrary if the regularization penalty tends to be closer to infinity then the objective function is mostly influenced by the regularization part. It is always ideal to explore a range of values for the regularization penalty to improve the accuracy and avoid overfitting. 
 
@@ -224,7 +224,7 @@ Lasso performed a bit better than baseline model. However, XGBoost seemed to hav
 	
 **Figure 15:** Lasso Model 
 
-#### 3.4.5 Ridge Regressor
+#### 3.5.5 Ridge Regressor
 
 Ridge is a regression technique that uses L2 regularization. Ridge regression does not offer automatic variable selection in the sense that it is not make the weights zero on any of the variable used in the model and the regularization term in a ridge regression is slightly different than the lasso regression. The regularization term is the sum of the square of coefficients multiplied by the penalty whereas in lasso it is the sum of the absolute value of the coefficients. The regularization term is a gentle trade-off between fitting the model and overfitting the model and like in lasso it helps improve prediction accuracy as well as performance of the statistical model. The L2 regularization parameter helps control overfitting and will need to be explored for a range of values for the specific problem. The regularization parameter also helps reduce multicollinearity in the model. Similar to Lasso, when the regularization penalty tends to be zero there is no regularization, and the loss function is mostly influenced by the squared loss and in contrary if the regularization penalty tends to be closer to infinity then the objective function is mostly influenced by the regularization part. It is always ideal to explore a range of values for the regularization penalty to improve the accuracy and avoid overfitting. 
 
