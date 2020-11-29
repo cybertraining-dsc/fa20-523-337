@@ -12,7 +12,7 @@ Status: in progress
 - [x] wrong indentation when using images, images must not be in bullet lists but stands long, images must be refered to in text as Figure x
 - [ ] missing empty line before captions
 - [x] future considerations should be renamed to Limitations. 
-- [ ] there ar no : in headers such as in future considerations:
+- [ ] there are no : in headers such as in future considerations:
 - [ ] use grammerly
 - [ ] your tables are unreadable. There are different ways on how to do this. You can include the parameters as text and the rest as markdown table
 - [ ] hid from second author wrong
@@ -86,19 +86,18 @@ The CRISP-DM process methodology was followed in this project. The  high-level i
 
 **Figure 2:** Project Methodology
 
-- Load Data
+### 3.1 Load Data:
+
+The data we obtained from Kaggle was over 2.6 GB (for Train and Test). As the size of the dataset was large, I created a storage bucket in GCP to host the data. The URL is provided above for your reference.Also for this project we are using only the Train data to build our models and test the results because the real end goal is to test the effectiveness of algorithm. Since the test set doesnt contain the Target Variable (rightly so!), we won't be consuming the test set for our analysis.	
+
 	- [Kaggle - Customer Revenue Prediction - Train Dataset](https://storage.googleapis.com/gstoretrain/train.csv)
-	- [Kaggle - Customer Revenue Prediction - Test Dataset](https://storage.googleapis.com/gstoretrain/test.csv)
+	- [Kaggle - Customer Revenue Prediction - Test Dataset](https://storage.googleapis.com/gstoretrain/test.csv)	
 
-	The data we obtained from Kaggle was over 2.6 GB (for Train and Test). As the size of the dataset was large, I created a storage bucket in GCP to host the data. The URL is provided above for your reference.Also for this project we are using only the Train data to build our models and test the results because the real end goal is to test the effectiveness of algorithm. Since the test set doesnt contain the Target Variable (rightly so!), we won't be consuming the test set for our analysis.	
-
-- Data Exploration
+### 3.2 Data Exploration:
 
 The dataset obtained for this project is large.  It had contained over 900k records. The dataset also contained 12 Independent Variable and 1 Dependent variable. The Dependent Variable is totals.transactionRevenue.  The end goal of this project is to predict the revenue of the Online Store Customer as close as possible.
 
-- Target Variable
-
-The Target Variable is totals.transactionRevenue has the transaction value of each visit. But, this column contains 98.72% of missing values for revenue (no purchase). The Target variable had a skewed distribution, we performed a lognormal distribution, so the target variable has normal distribution.
+**Target Variable:** The Target Variable is totals.transactionRevenue has the transaction value of each visit. But, this column contains 98.72% of missing values for revenue (no purchase). The Target variable had a skewed distribution, we performed a lognormal distribution, so the target variable has normal distribution.
 
 ![Target Variable](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/y_after_transformation.png) 
 
@@ -109,7 +108,7 @@ The Target Variable is totals.transactionRevenue has the transaction value of ea
 
 	-	Browser
 		
-		The most popular browser is Google Chrome. Also, we noticed second best users were using safari browser and firefox was placed third
+		The most popular browser is Google Chrome. Also, we noticed second and third best users were using safari and firefox respectively
 		
 		![Browser Variable](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/device_browser.png)		
 				
@@ -117,7 +116,7 @@ The Target Variable is totals.transactionRevenue has the transaction value of ea
 		
 	-	Device Category
 	
-		About 70% of users were accessing online store via desktop
+		Almost 70% of users were accessing online store via desktop
 		
 		![Device Category Variable](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/device_category.png)		
 		
@@ -125,7 +124,7 @@ The Target Variable is totals.transactionRevenue has the transaction value of ea
 		
 	-	OperatingSystem
 		
-		Windows is still the popular operating system among the Google Store visitors among the desktop users. However, among the mobile users, what's interesting is, almost equal number of ios users (slightly lower) as android users access google play store.
+		Windows is the popular operating system among the desktop users. However, among the mobile users, what's interesting is, almost equal number of ios users (slightly lower) as android users accessed google play store. The reason why this is interesting is because, google play store is primarily used by android users and ios users almost always use Apple Store for downloading apps to their mobile devices. So it is interesting to know, almost equal number of ios users visit google store as well.
 		
 		![OperatingSystem](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/device_operating_system.png)
 			
@@ -133,7 +132,7 @@ The Target Variable is totals.transactionRevenue has the transaction value of ea
 		
 	-	GeoNetwork-City
 		
-		Mountainview, California tops the cities list. However in the top 10 cities, 4 cities are from California. 
+		Mountain View, California tops the cities list for the users who accessed online store. However in the top 10 cities, 4 cities are from California. 
 		
 		![GeoNetwork-City](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/geo_network_city.png)  
 				
@@ -141,7 +140,7 @@ The Target Variable is totals.transactionRevenue has the transaction value of ea
 		
 	-	GeoNetwork-Country
 		
-		Customers from US are way ahead of other customers from different countries. May be this could be due to the Online Store data that was provided to us was pulled from US Google Play Store (Possible BIAS!!!)
+		Customers from US are way ahead of other customers from different countries. May be this could be due to the fact that online store data that was provided to us was pulled from US Google Play Store (Possible BIAS!!!).
 		
 		![GeoNetwork-Country](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/geo_network_country.png)		
 	
@@ -149,7 +148,7 @@ The Target Variable is totals.transactionRevenue has the transaction value of ea
 		
 	-	GeoNetwork-Region
 		
-		No surprise here, as we are already aware that majority of the customers are from US, so America region tops the list
+		We are already aware that majority of the customers are from US, so America region tops the list.
 		
 		![GeoNetwork-Region](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/geo_network_continent.png)
 		
@@ -157,7 +156,7 @@ The Target Variable is totals.transactionRevenue has the transaction value of ea
 		
 	-	GeoNetwork-Metro
 		
-		SFO tops the list for all metro cities, followed by New York and then London
+		SFO tops the list for all metro cities, followed by New York and then London.
 		
 		![GeoNetwork-Metro](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/geo_network_metro.png)	
 		
@@ -178,7 +177,7 @@ Data Pre-Processing is an important step to build a Machine Learning Model. The 
 - Feature Engineering
 
 Feature Engineering is the process of extracting the hidden signals/features, so the model can use these features to increase the predictive power. This step is the fundamental difference between a good model and a bad model. Also, there is no one-size-fits all approach for Feature Engineering. It is extremely time consuming and requires a lot of domain knowledge as well. 
-For this project, we created sophisticated functions to extract date related values such as Month, Year, Data, Weekday, WeekofYear. We also noticed that browser and operating systems are redundant features. Instead of removing them, we combined them to create a combinational feature, so we believe this will increase the predictive power. We also calculated mean, sum and count for pageviews and hits, so it can provide more powerful extraction of the feature to the model.
+For this project, we created sophisticated functions to extract date related values such as Month, Year, Data, Weekday, WeekofYear. We also noticed that browser and operating systems are redundant features. Instead of removing them, we combined them to create a combined feature and believe this will increase the predictive power. We also calculated mean, sum and count for pageviews and hits, so it can provide more powerful extraction of the feature to the model.
 
 - Feature Selection
 
@@ -200,7 +199,7 @@ We tested several different Machine Learning Models as shown below. The results 
 
 Linear regression is a supervised learning model that follows a linear approach in that it assumes a linear relationship between one ore more predictor variables (x) and a single target or response variable (y). The target variable can be calculated as a linear combination of the predictors or in other words the target is the calculated by weighted sum of the inputs and bias where the weighted is estimated through different optimization techniques. Linear regression is referred to as simple linear regression when there is only one predictor variable involved and referred to as multiple linear regression when there is more than one predictor variable is involved. The error between the predicted output and the ground truth is generally calculated using RMSE (root mean squared error). This is one of the classic modeling techniques that will be explored in this project because the target variable (revenue per customer) is a real valued continuous output and exhibits a significant linear relationship with the independent variables or the input variables.
 
-In the exploration, SKLearn Linear Regression performed well overall. We used 5 fold Cross validation and the best RMSE Score for this model observed was: 1.89. The training and test rmse error values are very close indicating that there is no overfitting the data.
+In the exploration, SKLearn Linear Regression performed well overall. We used 5 fold Cross validation and the best RMSE Score for this model observed was: 1.89. The training and test RMSE error values are very close indicating that there is no overfitting the data.
 	
 ![Linear Regression](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/linear_regression3.png)	
 	
@@ -212,7 +211,7 @@ REFERNCE IN TEXT TO Figure 1 missing
 
 XGBoost regression is a gradient boosting regression technique and one of the popular gradient boosting frameworks that exists today. It follows the ensemble principle where a collection of weak learners improves the prediction accuracy. The prediction in the current step S is weighed based on the outcomes from the previous step S-1. Weak learning is slightly better than random learning and that is one of the key strengths of gradient boosting technique. The XGBoost algorithm was explored for this project for several reasons including it offers built-in regularization that helps avoid overfitting, it can handle missing values effectively and it also does cross validation automatically. The feature space for the dataset that we are using is sparse and believe the potential to overfit the data is high which is one of the primary reasons for exploring XGBoost.
     
-XGBoost Linear Regression performed very well. It was our top performing model with the lowest RMSE error of 1.619. Also the training and test scores are reasonably close and it doesn't look like there was the problem of overfitting the training data. We tested multiple rounds with different parameters, this was the best performing model overall. 
+XGBoost Linear Regression performed very well. It was our top performing model with the lowest RMSE error of 1.619. Also the training and test scores are reasonably close and it doesn't look like there was the problem of over fitting the training data. We tested multiple rounds with different parameters, this was the best performing model overall. 
 		
 ![XGBoost](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/xgboost3.png)
 	
@@ -222,7 +221,7 @@ XGBoost Linear Regression performed very well. It was our top performing model w
 
 LightGBM is a popular gradient boosting framework similar to XGBoost and is gaining popularity in the recent days. The important difference between lightGBM and other gradient boosting frameworks is that LightGBM grows the tree vertically or in other words it grows the tree leafwise compared to other frameworks where the trees grow horizontally. In this project the lightGBM framework was experimented primarily because this framework works well on large dataset with more than 10K observations. The algorithm also has a high throughput while using reasonably less memory but there is one problem with overfitting the data which we have controlled in our exploration using appropriate hyper parameter setting and optimized the performance.
 
-LightGBM Regression was the second best performing model interms of RMSE Scores.  Also the training and test scores seems to be little different and so might have produce overfitting. I tested multiple rounds with different parameters, this was the best performing model overall.  
+LightGBM Regression was the second best performing model in terms of RMSE Scores.  Also the training and test scores seems to be little different and so might have produce overfitting. I tested multiple rounds with different parameters, this was the best performing model overall.  
 	
 ![lightgbm](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/lightgbm3.png)
 	
@@ -230,9 +229,9 @@ LightGBM Regression was the second best performing model interms of RMSE Scores.
 	
 - Lasso Regression
 
-Lasso is a regression technique that uses L1 regularization. In statistics, lasso regression is a method to do automatic variable selection and regularization to improve prediction accuracy and interpretability of the statistical model. Lasso regression by nature makes the coefficient for some of the variables zero meaning these variables are automatically eliminated from the modeling process. The L1 regularization parameter helps control overfitting and will need to be explored for a range of values for the specific problem. When the regularization penalty tends to be zero there is no regularization, and the loss function is mostly influenced by the squared loss and in contrary if the regularization penalty tends to be closer to infinity then the objective function is mostly influenced by the regularization part. It is always ideal to explore a range of values for the regularization penalty to improve the accuracy and avoid overfitting. 
+Lasso is a regression technique that uses L1 regularization. In statistics, lasso regression is a method to do automatic variable selection and regularization to improve prediction accuracy and performance of the statistical model. Lasso regression by nature makes the coefficient for some of the variables zero meaning these variables are automatically eliminated from the modeling process. The L1 regularization parameter helps control overfitting and will need to be explored for a range of values for the specific problem. When the regularization penalty tends to be zero there is no regularization, and the loss function is mostly influenced by the squared loss and in contrary if the regularization penalty tends to be closer to infinity then the objective function is mostly influenced by the regularization part. It is always ideal to explore a range of values for the regularization penalty to improve the accuracy and avoid overfitting. 
 
-In this project, Lasso is one of the important techniques that was explored primarily because the problem being solved is a regression problem and there is possibility to overfit the data due to the number of observations and feature space. As a team, we explored different ranges for regularization penalty and identified the appropriate value that helped achieve maximum reduction in the total rmse score.
+In this project, Lasso is one of the important techniques that was explored primarily because the problem being solved is a regression problem and there is possibility to overfit the data due to the number of observations and feature space. As a team, we explored different ranges for regularization penalty and identified the appropriate value that helped achieve maximum reduction in the total RMSE score.
 
 Lasso performed a bit better than baseline model. However, XGBoost seemed to have performed better than Lasso
 	
@@ -242,9 +241,9 @@ Lasso performed a bit better than baseline model. However, XGBoost seemed to hav
 
 - Ridge Regressor
 
-Ridge is a regression technique that uses L2 regularization. Ridge regression does not offer automatic variable selection in the sense that it is not make the weights zero on any of the variable used in the model and the regularization term in a ridge regression is slightly different than the lasso regression. The regularization term is the sum of the square of coefficients multiplied by the penalty whereas in lasso it is the sum of the absolute value of the coefficients. The regularization term is a gentle trade-off between fitting the model and overfitting the model and like in lasso it helps improve prediction accuracy as well as interpretability of the statistical model. The L2 regularization parameter helps control overfitting and will need to be explored for a range of values for the specific problem. The regularization parameter also helps reduce multicollinearity in the model. Similar to Lasso, when the regularization penalty tends to be zero there is no regularization, and the loss function is mostly influenced by the squared loss and in contrary if the regularization penalty tends to be closer to infinity then the objective function is mostly influenced by the regularization part. It is always ideal to explore a range of values for the regularization penalty to improve the accuracy and avoid overfitting. 
+Ridge is a regression technique that uses L2 regularization. Ridge regression does not offer automatic variable selection in the sense that it is not make the weights zero on any of the variable used in the model and the regularization term in a ridge regression is slightly different than the lasso regression. The regularization term is the sum of the square of coefficients multiplied by the penalty whereas in lasso it is the sum of the absolute value of the coefficients. The regularization term is a gentle trade-off between fitting the model and overfitting the model and like in lasso it helps improve prediction accuracy as well as performance of the statistical model. The L2 regularization parameter helps control overfitting and will need to be explored for a range of values for the specific problem. The regularization parameter also helps reduce multicollinearity in the model. Similar to Lasso, when the regularization penalty tends to be zero there is no regularization, and the loss function is mostly influenced by the squared loss and in contrary if the regularization penalty tends to be closer to infinity then the objective function is mostly influenced by the regularization part. It is always ideal to explore a range of values for the regularization penalty to improve the accuracy and avoid overfitting. 
 
-In this project, Ridge regression is one of the important techniques that was explored again primarily because the problem being solved is a regression problem and there is possibility to overfit the data due to the number of observations and feature space. As a team, we explored different ranges for regularization penalty and identified the appropriate value that helped achieve maximum reduction in the total rmse score. Ridge performed a bit better than baseline model. However, XGBoost seemed to have performed better than Ridge
+In this project, Ridge regression is one of the important techniques that was explored again primarily because the problem being solved is a regression problem and there is possibility to overfit the data due to the number of observations and feature space. As a team, we explored different ranges for regularization penalty and identified the appropriate value that helped achieve maximum reduction in the total RMSE score. Ridge performed a bit better than baseline model. However, XGBoost seemed to have performed better than Ridge
 	
 ![Ridge](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/ridge3.png)
 	
@@ -253,7 +252,7 @@ In this project, Ridge regression is one of the important techniques that was ex
 
 ## 5. Software Technologies
 
-In this projet we used Python and Google Colab Jupyter Notebook. We used several Python pacakges to execute this project such as Pandas, Numpy, Matplotlib, sklearn
+In this project we used Python and Google Colab Jupyter Notebook. We used several Python pancakes to execute this project such as Pandas, Numpy, Matplotlib, sklearn
 
 ## 6. Project Timelines
 
@@ -273,8 +272,6 @@ In this projet we used Python and Google Colab Jupyter Notebook. We used several
 
 ## 7. Conclusion
 
-**ç WHY USE THIS CHAR?**
-
 As a project team the intention was to create a template that can be utilized for any ML project. The dataset that was used for this project was challenging in a way that it required a lot of data cleaning, flattening and transformation to get the data into the required format. 
 
 ### 7.1 Model Pipeline:
@@ -283,15 +280,15 @@ In this project, multiple regression and tree based models from scikit learn lib
 
 ### 7.2 Feature Exploration and Pre-Processing:
 
-As part of this project a few features were engineered and included in the training dataset. The feature importance visualizations that were generated after the model training process indicate that these engineered features were part of the top 30% of high impact features and they contributed reasonably to improving the overall accuracy of the model. We as a team discussed on the possibility of including few other potential features that could be derived from the dataset during additional experimentation phase and included those additional features as well to the dataset that was used during model training. Although these features did not contribute largely to reducing the error it gave us as a team an opportunity to share ideas and methods to develop these new features. Also, during the discussions we also tried to explore other imputation strategies, identify more outliers and tried different encoding techniques for categorical variables and ultimately determined that label encoder or ordinal encoder is the best way forward. We also tried to exclude some of the low importance features and retrained the model to validate if the same or better rmse value could be achieved.
+As part of this project a few features were engineered and included in the training dataset. The feature importance visualizations that were generated after the model training process indicate that these engineered features were part of the top 30% of high impact features and they contributed reasonably to improving the overall accuracy of the model. We as a team discussed on the possibility of including few other potential features that could be derived from the dataset during additional experimentation phase and included those additional features as well to the dataset that was used during model training. Although these features did not contribute largely to reducing the error it gave us as a team an opportunity to share ideas and methods to develop these new features. Also, during the discussions we also tried to explore other imputation strategies, identify more outliers and tried different encoding techniques for categorical variables and ultimately determined that label encoder or ordinal encoder is the best way forward. We also tried to exclude some of the low importance features and retrained the model to validate if the same or better RMSE value could be achieved.
 
 ### 7.3 Outcome of Experiments:
 
-Multiple modeling techniques were explored as part of this project like Linear regression, gradient boosting algorithms and linear regression regularization techniques. The techniques were explored with basic parameter setting and based on the outcome of those experiments, the hyper parameters were tuned using grid search to obtain the best estimator evaluated on rmse. Also, during grid search K-Fold cross validation of training data was used and the cross validated results were examined through a results table. The fit_intercept flag played a significant role resulting in an optimal error. As part of the different experimentations that were performed, random forest algorithm was also explored but it suffered performance issues and it seemed like it would require more iterations to converge which is why it was dropped from our results and further exploration. Although random forest was not explored, gradient boosting techniques were part of the experimentations and the best rmse from XGBoost. The LightGBM regressor was also explored with different parameter settings but it did not produce better rmse score than XGBoost. 
+Multiple modeling techniques were explored as part of this project like Linear regression, gradient boosting algorithms and linear regression regularization techniques. The techniques were explored with basic parameter setting and based on the outcome of those experiments, the hyper parameters were tuned using grid search to obtain the best estimator evaluated on RMSE. Also, during grid search K-Fold cross validation of training data was used and the cross validated results were examined through a results table. The fit_intercept flag played a significant role resulting in an optimal error. As part of the different experimentations that were performed, random forest algorithm was also explored but it suffered performance issues and it seemed like it would require more iterations to converge which is why it was dropped from our results and further exploration. Although random forest was not explored, gradient boosting techniques were part of the experimentations and the best RMSE from XGBoost. The LightGBM regressor was also explored with different parameter settings but it did not produce better RMSE score than XGBoost. 
 
-In the case of XGBoost, there was improvement to the rmse score as different tree depths, feature fraction, learning rate, number of children, bagging fraction, sub-sample were explored. There was significant improvement to the error metric when these parameters were adjusted in an intuitive way. Also, linear regression with regularization techniques were explored and although there was some improvement to the error metric compared to the basic linear regression model they did not perform better than the gradient boosting method that was explored. So, based on different explorations and experimentations we are able to reasonably conclude that gradient boosting technique performed better for the given problem setting and generated the best rmse score. Based on the evaluation results of XGBoost on the dataset used, the recommendation would be to test the XGBoost model with real time data and the performance of the model can be evaluated in real-time scenario too and additionally, if needed, hyper parameter tuning can be performed on the XGBoost model specifically for the real-time scenario.
+In the case of XGBoost, there was improvement to the RMSE score as different tree depths, feature fraction, learning rate, number of children, bagging fraction, sub-sample were explored. There was significant improvement to the error metric when these parameters were adjusted in an intuitive way. Also, linear regression with regularization techniques were explored and although there was some improvement to the error metric compared to the basic linear regression model they did not perform better than the gradient boosting method that was explored. So, based on different explorations and experimentations we are able to reasonably conclude that gradient boosting technique performed better for the given problem setting and generated the best RMSE score. Based on the evaluation results of XGBoost on the dataset used, the recommendation would be to test the XGBoost model with real time data and the performance of the model can be evaluated in real-time scenario too and additionally, if needed, hyper parameter tuning can be performed on the XGBoost model specifically for the real-time scenario.
 
-We also performed feature engineering in this dataset to get more predicitve value out of the features and built a pipeline, so it can be easily fed into different models. We tested five different models, such as, Linear Regression, XGBoost, Light GBM, Lasso and Ridge. The summary of all the models is shown below for your reference:
+We also performed feature engineering in this dataset to get more predictive value out of the features and built a pipeline, so it can be easily fed into different models. We tested five different models, such as, Linear Regression, XGBoost, Light GBM, Lasso and Ridge. The summary of all the models is shown below for your reference:
 
 ![Model_Results](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/model_results_new2.png)
 
@@ -304,7 +301,7 @@ Due to the limited capacity of our Colab Notebook setup, we were unable to perfo
 
 ## 8. Previous Explorations
 
-The Online GStore customer revenue prediction problem is a Kaggle competition with more than 4100 entries. It is one of the popular challenges in Kaggle with a prize money of $45,000. Although as a team we did not make it to the top in the leaderboard, the challenge gave us a huge opportunity to explore different methods, techniques, tools and resources. The one important difference between many of the previous of explorations versus what we achieved is the number of different machine learning algorithms that we explored and observed the performance. We reviewed many submissions in Kaggle and found only a very few entries exploring different parameter settings and making intuitive adjustments to them to make the model perform at an optimum level like what we accomplished. The other uniqueness that we brought to our submission was identifying techniques that offered good performance and consumed less system resources in terms of operationalization. We will continue to do further exploration and attempt other techniques to identify the best performing model.
+The Online GStore customer revenue prediction problem is a Kaggle competition with more than 4100 entries. It is one of the popular challenges in Kaggle with a prize money of $45,000. Although as a team we did not make it to the top in the leader board, the challenge gave us a huge opportunity to explore different methods, techniques, tools and resources. The one important difference between many of the previous of explorations versus what we achieved is the number of different machine learning algorithms that we explored and observed the performance. We reviewed many submissions in Kaggle and found only a very few entries exploring different parameter settings and making intuitive adjustments to them to make the model perform at an optimum level like what we accomplished. The other uniqueness that we brought to our submission was identifying techniques that offered good performance and consumed less system resources in terms of operationalization. We will continue to do further exploration and attempt other techniques to identify the best performing model.
 
 
 ## 9. References
