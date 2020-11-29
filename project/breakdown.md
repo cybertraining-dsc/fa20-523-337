@@ -1,6 +1,6 @@
 Activity									|	Resource
 ------------									|	------------
-**Data Ingestion**								|				
+**Data Ingestion**												
 Initial exploration in Kaggle to choose a problem and the right dataset		|	Balaji & Anantha
 Download dataset and push the files to GCS bucket				|	Balaji
 Explore different methods to flatten JSON and perform data type conversions 	|	Balaji	
