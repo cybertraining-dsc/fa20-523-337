@@ -18,11 +18,11 @@ Status: in progress
 - [x] hid from second author wrong
 - [ ] you are not looking at the output of the check report script some errors are listed there
 - [x] the word below and above must never be used in a formal paper to refer to figures and tables and sections, use numbers as we posted in piszza
-- [ ] bullet lists must not be used in substitution for subsections. You could **bf**. them and do not use a bullet similar to LaTeX paragraphs if you do not want to use subsections.SUbsections show up in the TOC, **bf**. does not
-- [ ] no explanation is provided what teh different regressiosn are, no citations provided
-- [ ] all figures must have captions (below)
-- [ ] all tables must have captions (above)
-- [ ] This is not a ppt presentations. for example
+- [x] bullet lists must not be used in substitution for subsections. You could **bf**. them and do not use a bullet similar to LaTeX paragraphs if you do not want to use subsections.SUbsections show up in the TOC, **bf**. does not
+- [x] no explanation is provided what teh different regressiosn are, no citations provided
+- [x] all figures must have captions (below)
+- [x] all tables must have captions (above)
+- [x] This is not a ppt presentations. for example
 
   * Kaggle - Customer Revenue Prediction
 
