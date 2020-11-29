@@ -105,9 +105,7 @@ The dataset obtained for this project is large.  It had contained over 900k reco
 
 #### 3.2.1 Exploratory Data Analysis
 
-**Browser**
-		
-The most popular browser is Google Chrome. Also, we noticed second and third best users were using safari and firefox respectively
+**Browser:** The most popular browser is Google Chrome. Also, we noticed second and third best users were using safari and firefox respectively
 		
 ![Browser Variable](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/device_browser.png)		
 				
