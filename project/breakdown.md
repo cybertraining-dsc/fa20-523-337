@@ -49,7 +49,7 @@ Documenting results and the format for displaying results			|	Anantha & Balaji
 **Feature Importance visualization and Additional fine tuning**			
 Feature importance XGBoost Regressor						|	Anantha
 Feature importance LightGBM Regressor						|	Balaji
-Hyperparameter tuning and additional experimentation				|	Anantha & Balaji
+Hyperparameter tuning and additional experimentation\				|	Anantha & Balaji
 (Did discussions via Zoom calls & explored different approaches)		
 **Project Report**								
 Project	Abstract								|	Anantha
