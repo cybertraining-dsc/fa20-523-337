@@ -3,13 +3,13 @@
 [![Check Report](https://github.com/cybertraining-dsc/fa20-523-337/workflows/Check%20Report/badge.svg)](https://github.com/cybertraining-dsc/fa20-523-337/actions)
 [![Status](https://github.com/cybertraining-dsc/fa20-523-337/workflows/Status/badge.svg)](https://github.com/cybertraining-dsc/fa20-523-337/actions)
 Status: in progress
-- [ ] please follow our template
-- [ ] Please add references - Facing issues with adding reference. Need assitance
+- [x] please follow our template
+- [x] Please add references - Facing issues with adding reference. Need assistance
 - [ ] Please correct the images with correct markdown syntax. 
 - [ ] usage of italic vs quotes
 - [ ] wrong indentation level when doing lists, student does not do markdown
 - [ ] wrong indentation while using paragraphs they must not be indented
-- [ ] wrong indentation when using images, images must not be in bullet lists but stands long, images must be refered to in text as Figure x
+- [x] wrong indentation when using images, images must not be in bullet lists but stands long, images must be refered to in text as Figure x
 - [ ] missing empty line before captions
 - [ ] future considerations should be renamed to Limitations. 
 - [ ] there ar no : in headers such as in future considerations:
@@ -74,7 +74,7 @@ RMSE is defined as:
 
 ![Figure 1.1](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/loss.png)  
 
-**Figure 1: RMSE**
+**Figure 1:** RMSE
 
 where y-hat is the natural log of the predicted revenue for a customer and y is the natural log of the actual summed revenue value plus one as seen below.
 
@@ -84,7 +84,7 @@ The CRISP-DM process methodology was followed in this project. The  high-level i
 
 ![Methodology](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/methodology.png)
 
-**Figure 2: Project Methodology**
+**Figure 2:** Project Methodology
 
 - Load Data
 	- [Kaggle - Customer Revenue Prediction - Train Dataset](https://storage.googleapis.com/gstoretrain/train.csv)
@@ -102,7 +102,7 @@ The Target Variable is totals.transactionRevenue has the transaction value of ea
 
 ![Target Variable](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/y_after_transformation.png) 
 
-**Figure 3: Target Variable**
+**Figure 3:** Target Variable
  
 
 - Exploratory Data Analysis
@@ -113,7 +113,7 @@ The Target Variable is totals.transactionRevenue has the transaction value of ea
 		
 		![Browser Variable](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/device_browser.png)		
 				
-		**Figure 4: Browser Variable**
+		**Figure 4:** Browser Variable
 		
 	-	Device Category
 	
@@ -121,7 +121,7 @@ The Target Variable is totals.transactionRevenue has the transaction value of ea
 		
 		![Device Category Variable](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/device_category.png)		
 		
-		**Figure 5: Device Category Variable**
+		**Figure 5:** Device Category Variable
 		
 	-	OperatingSystem
 		
@@ -129,7 +129,7 @@ The Target Variable is totals.transactionRevenue has the transaction value of ea
 		
 		![OperatingSystem](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/device_operating_system.png)
 			
-		**Figure 6: Operating System**	
+		**Figure 6:** Operating System	
 		
 	-	GeoNetwork-City
 		
@@ -137,7 +137,7 @@ The Target Variable is totals.transactionRevenue has the transaction value of ea
 		
 		![GeoNetwork-City](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/geo_network_city.png)  
 				
-		**Figure 7: GeoNetwork City**	
+		**Figure 7:** GeoNetwork City	
 		
 	-	GeoNetwork-Country
 		
@@ -145,7 +145,7 @@ The Target Variable is totals.transactionRevenue has the transaction value of ea
 		
 		![GeoNetwork-Country](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/geo_network_country.png)		
 	
-		**Figure 8: GeoNetwork Country**
+		**Figure 8:** GeoNetwork Country
 		
 	-	GeoNetwork-Region
 		
@@ -153,7 +153,7 @@ The Target Variable is totals.transactionRevenue has the transaction value of ea
 		
 		![GeoNetwork-Region](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/geo_network_continent.png)
 		
-		**Figure 9: GeoNetwork Region**
+		**Figure 9:** GeoNetwork Region
 		
 	-	GeoNetwork-Metro
 		
@@ -161,7 +161,7 @@ The Target Variable is totals.transactionRevenue has the transaction value of ea
 		
 		![GeoNetwork-Metro](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/geo_network_metro.png)	
 		
-		**Figure 10: GeoNetwork Region**
+		**Figure 10:** GeoNetwork Region
 		
 	-	Ad Sources
 	
@@ -169,7 +169,7 @@ The Target Variable is totals.transactionRevenue has the transaction value of ea
 		
 		![GeoNetwork-Metro](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/traffic_source_adcontent.png)	
 		
-		**Figure 11: Ad Sources**
+		**Figure 11:** Ad Sources
 	
 - Data Pre-Processing
 
@@ -205,7 +205,7 @@ In the exploration, SKLearn Linear Regression performed well overall. We used 5 
 	
 ![Linear Regression](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/linear_regression1.png)	
 	
-**Figure 12: Linear Regression Model** 
+**Figure 12:** Linear Regression Model 
 	
 REFERNCE IN TEXT TO Figure 1 missing
 
@@ -217,7 +217,7 @@ XGBoost Linear Regression performed very well. It was our top performing model w
 		
 ![XGBoost](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/xgboost1.png)
 	
-**Figure 13: XGBoost Model** 
+**Figure 13:** XGBoost Model 
 	
 	
 - LightGBM Regressor	
@@ -228,7 +228,7 @@ LightGBM Regression was the second best performing model interms of RMSE Scores.
 	
 ![lightgbm](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/lightgbm1.png)
 	
-**Figure 14: LightGBM Model** 
+**Figure 14:** LightGBM Model 
 	
 - Lasso Regression
 
@@ -240,7 +240,7 @@ Lasso performed a bit better than baseline model. However, XGBoost seemed to hav
 	
 ![lasso](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/lasso1.png)
 	
-**Figure 15: Lasso Model** 
+**Figure 15:** Lasso Model 
 
 - Ridge Regressor
 
@@ -250,7 +250,7 @@ In this project, Ridge regression is one of the important techniques that was ex
 	
 ![Ridge](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/ridge1.png)
 	
-**Figure 16: Ridge Model** 
+**Figure 16:** Ridge Model 
 
 
 ## 5. Software Technologies
@@ -297,7 +297,7 @@ We also performed feature engineering in this dataset to get more predicitve val
 
 ![Model_Results](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/model_results_new.png)
 
-**Figure 17: Model Results Summary** 
+**Figure 17:** Model Results Summary 
 
 
 ### Future Considerations
