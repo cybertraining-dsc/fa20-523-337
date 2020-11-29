@@ -76,12 +76,11 @@ The metrics used for evaluation in this analysis is the root mean squared error 
 
 RMSE is defined as:
 
-![Figure 2.1](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/loss.png)  
+![Figure 1.1](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/loss.png)  
 
-**Figure - RMSE**
+**Figure 1: RMSE**
 
 where y-hat is the natural log of the predicted revenue for a customer and y is the natural log of the actual summed revenue value plus one as seen below.
-
 
 ## 3. Methodology
 
@@ -89,7 +88,7 @@ The CRISP-DM process methodology was followed in this project. The  high-level i
 
 ![Methodology](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/methodology.png)
 
-**Figure - Project Methodology**
+**Figure 2: Project Methodology**
 
 - Get Data
 
@@ -109,7 +108,10 @@ The dataset obtained for this project is large.  It had contained over 900k reco
 
 The Target Variable is totals.transactionRevenue has the transaction value of each visit. But, this column contains 98.72% of missing values for revenue (no purchase). The Target variable had a skewed distribution, we performed a lognormal distribution, so the target variable has normal distribution.
 
-![Target Variable](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/y_after_transformation.png)  
+![Target Variable](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/y_after_transformation.png) 
+
+**Figure 3: Target Variable**
+ 
 
 - Exploratory Data Analysis
 
@@ -119,7 +121,7 @@ The Target Variable is totals.transactionRevenue has the transaction value of ea
 		
 		![Browser Variable](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/device_browser.png)		
 				
-		CAPTION MISSING
+		**Figure 4: Browser Variable**
 		
 	-	Device Category
 	
@@ -127,13 +129,15 @@ The Target Variable is totals.transactionRevenue has the transaction value of ea
 		
 		![Device Category Variable](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/device_category.png)		
 		
-		CAPTION MISSING
+		**Figure 5: Device Category Variable**
 		
 	-	OperatingSystem
 		
 		Windows is still the popular operating system among the Google Store visitors among the desktop users. However, among the mobile users, what's interesting is, almost equal number of ios users (slightly lower) as android users access google play store.
 		
-		![Device Category Variable](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/device_operating_system.png)		
+		![OperatingSystem](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/device_operating_system.png)
+			
+		**Figure 6: Operating System**	
 		
 	-	GeoNetwork-City
 		
@@ -141,7 +145,7 @@ The Target Variable is totals.transactionRevenue has the transaction value of ea
 		
 		![GeoNetwork-City](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/geo_network_city.png)  
 				
-		CAPTION MISSING
+		**Figure 7: GeoNetwork City**	
 		
 	-	GeoNetwork-Country
 		
@@ -149,7 +153,7 @@ The Target Variable is totals.transactionRevenue has the transaction value of ea
 		
 		![GeoNetwork-Country](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/geo_network_country.png)		
 	
-		CAPTION MISSING
+		**Figure 8: GeoNetwork Country**
 		
 	-	GeoNetwork-Region
 		
@@ -157,7 +161,7 @@ The Target Variable is totals.transactionRevenue has the transaction value of ea
 		
 		![GeoNetwork-Region](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/geo_network_continent.png)
 		
-		CAPTION MISSING
+		**Figure 9: GeoNetwork Region**
 		
 	-	GeoNetwork-Metro
 		
@@ -165,15 +169,15 @@ The Target Variable is totals.transactionRevenue has the transaction value of ea
 		
 		![GeoNetwork-Metro](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/geo_network_metro.png)	
 		
-		CAPTION MISSING
+		**Figure 10: GeoNetwork Region**
 		
 	-	Ad Sources
 	
 		Google Merchandise and Google Online Store are the top sources where the traffic is coming from to the Online Store. 
 		
-		CAPTION MISSING
-		
 		![GeoNetwork-Metro](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/traffic_source_adcontent.png)	
+		
+		**Figure 11: Ad Sources**
 	
 - Data Pre-Processing
 
@@ -209,7 +213,7 @@ In the exploration, SKLearn Linear Regression performed well overall. We used 5 
 	
 ![Linear Regression](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/linear_regression1.png)	
 	
-**Figure 1:** Linear Regression Model
+**Figure 12: Linear Regression Model** 
 	
 REFERNCE IN TEXT TO Figure 1 missing
 
@@ -221,7 +225,7 @@ XGBoost Linear Regression performed very well. It was our top performing model w
 		
 ![XGBoost](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/xgboost1.png)
 	
-**Figure - XGBoost Model DOES NOT FOLLOW TEMPLATE** 
+**Figure 13: XGBoost Model** 
 	
 	
 - LightGBM Regressor	
@@ -232,7 +236,7 @@ LightGBM Regression was the second best performing model interms of RMSE Scores.
 	
 ![lightgbm](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/lightgbm1.png)
 	
-**Figure - LightGBM Model DOES NOT FOLLOW TEMPLATE** 
+**Figure 14: LightGBM Model** 
 	
 - Lasso Regression
 
@@ -244,7 +248,7 @@ Lasso performed a bit better than baseline model. However, XGBoost seemed to hav
 	
 ![lasso](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/lasso1.png)
 	
-**Figure - Lasso Model DOES NOT FOLLOW TEMPLATE** 
+**Figure 15: Lasso Model** 
 
 - Ridge Regressor
 
@@ -254,7 +258,7 @@ In this project, Ridge regression is one of the important techniques that was ex
 	
 ![Ridge](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/ridge1.png)
 	
-**Figure - Ridge Model DOES NOT FOLLOW TEMPLATE** 
+**Figure 16: Ridge Model** 
 
 
 ## 5. Software Technologies
@@ -283,7 +287,7 @@ PARAGRAPH MISSING, THIS IS NOT PPT
 
 ## 7. Conclusion
 
-ç WHY USE THIS CHAR?
+**ç WHY USE THIS CHAR?**
 
 As a project team the intention was to create a template that can be utilized for any ML project. The dataset that was used for this project was challenging in a way that it required a lot of data cleaning, flattening and transformation to get the data into the required format. 
 
@@ -305,7 +309,7 @@ We also performed feature engineering in this dataset to get more predicitve val
 
 ![Model_Results](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/model_results_new.png)
 
-**Figure - Model Results Summary DOES NOT FOLLOW TEMPLATE** 
+**Figure 17: Model Results Summary** 
 
 
 ### Future Considerations
