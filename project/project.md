@@ -255,11 +255,7 @@ In this project, Ridge regression is one of the important techniques that was ex
 
 ## 5. Software Technologies
 
-PARAGRAPH MISSING, THIS IS NOT PPT
-
-- Python
-- Jupyter Notebook (Google Colab)
-- Packages: Pandas, Numpy, Matplotlib, sklearn
+In this projet we used Python and Google Colab Jupyter Notebook. We used several Python pacakges to execute this project such as Pandas, Numpy, Matplotlib, sklearn
 
 ## 6. Project Timelines
 
@@ -306,10 +302,7 @@ We also performed feature engineering in this dataset to get more predicitve val
 
 ### Future Considerations
 
-THIS IS NOT PPT
-
-- Due to the limited capacity of our Colab Notebook setup, we were unable to perform Cross Validation for XGBoost and Light GBM. We recommend to perform cross validation for these models, check the RMSE Scores and potentially avoid overfitting, if any.
-- The tree based models performed well in this dataset. In the future try additional tree based models like Random Forest to evaluate their performance
+Due to the limited capacity of our Colab Notebook setup, we were unable to perform Cross Validation for XGBoost and Light GBM. We recommend to perform cross validation for these models, check the RMSE Scores and potentially avoid overfitting, if any. The tree based models performed well in this dataset. In the future try additional tree based models like Random Forest to evaluate their performance
 
 ## 8. Previous Explorations
 
