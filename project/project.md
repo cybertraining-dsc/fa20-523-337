@@ -63,12 +63,10 @@ The objective of this exploration is to predict the natural log of total revenue
 
 ## 2. Datasets
 
-As mentioned in the earlier sections, the dataset used in this model exploration is from Kaggle. The link to the dataset is provided below. The training contains more than 900K observations and based on the size of the dataset it would be ideal to use mini-batch or gradient descent optimization techniques to identify the coefficients that best describe the model. The target variable as observed in the dataset is a continuous variable which implies that the use case is a regression problem. As mentioned earlier, there are several machine learning techniques that can be explored for this type of problem including regression and ensemble methods with different parameter settings. The sparsity of potential features in the datasets indicates that multiple experimentations will be required to determine the best performing model. Also based on initial review of the datasets, it also observed that some of the categorical features exhibit low to medium cardinality and if these features are going to be retained in the final dataset used for training then it is important to choose the right encoding technique. 
+As mentioned in the earlier sections, the dataset used in this model exploration is from Kaggle [^1]. The link to the dataset is provided below. The training contains more than 900K observations and based on the size of the dataset it would be ideal to use mini-batch or gradient descent optimization techniques to identify the coefficients that best describe the model. The target variable as observed in the dataset is a continuous variable which implies that the use case is a regression problem. As mentioned earlier, there are several machine learning techniques that can be explored for this type of problem including regression and ensemble methods with different parameter settings. The sparsity of potential features in the datasets indicates that multiple experimentations will be required to determine the best performing model. Also based on initial review of the datasets, it also observed that some of the categorical features exhibit low to medium cardinality and if these features are going to be retained in the final dataset used for training then it is important to choose the right encoding technique. 
 
 - Train.csv, User transactions from August 1st, 2016 to August 1st, 2017
 - Test.csv, User transactions from August 2nd, 2017 to April 30th, 2018
-
-CITATIONS TO DATA MISSING
 
 #### Metrics
 
@@ -328,27 +326,29 @@ The Online GStore customer revenue prediction problem is a Kaggle competition wi
 
 [^1]: Kaggle Competition,2019,Predict the Online Store Revenue,[online] Available at: <https://www.kaggle.com/c/ga-customer-revenue-prediction/rules>
 
-[^2]: Towards DataScience,2020,Sweetviz- Powerful EDA,[online] Available at: <https://towardsdatascience.com/powerful-eda-exploratory-data-analysis-in-just-two-lines-of-code-using-sweetviz-6c943d32f34>
+[^2]: Kaggle Competition,2019,Predict the Online Store Revenue, Data, [online] Available at: <https://www.kaggle.com/c/ga-customer-revenue-prediction/data>
 
-[^3]: Towards Datascience,2018,Bhattacharya, Ridge and Lasso regression, [online] Available at: <https://towardsdatascience.com/ridge-and-lasso-regression-a-complete-guide-with-python-scikit-learn-e20e34bcbf0b>
+[^3]: Towards DataScience,2020,Sweetviz- Powerful EDA,[online] Available at: <https://towardsdatascience.com/powerful-eda-exploratory-data-analysis-in-just-two-lines-of-code-using-sweetviz-6c943d32f34>
 
-[^4]: Datacamp,2019,Oleszak, Regularization: Ridge, Lasso and Elastic Net, [online] Available at: <https://www.datacamp.com/community/tutorials/tutorial-ridge-lasso-elastic-net>
+[^4]: Towards Datascience,2018,Bhattacharya, Ridge and Lasso regression, [online] Available at: <https://towardsdatascience.com/ridge-and-lasso-regression-a-complete-guide-with-python-scikit-learn-e20e34bcbf0b>
 
-[^5]: Medium 2017,Mandot, What is LightGBM, [online] Available at: <https://medium.com/@pushkarmandot/https-medium-com-pushkarmandot-what-is-lightgbm-how-to-implement-it-how-to-fine-tune-the-parameters-60347819b7fc>
+[^5]: Datacamp,2019,Oleszak, Regularization: Ridge, Lasso and Elastic Net, [online] Available at: <https://www.datacamp.com/community/tutorials/tutorial-ridge-lasso-elastic-net>
 
-[^6]: Kaggle 2018,Kaggle, Google Analytics Customer Revenue Prediction, [online] Available at: <https://www.kaggle.com/c/ga-customer-revenue-prediction/data>
+[^6]: Medium 2017,Mandot, What is LightGBM, [online] Available at: <https://medium.com/@pushkarmandot/https-medium-com-pushkarmandot-what-is-lightgbm-how-to-implement-it-how-to-fine-tune-the-parameters-60347819b7fc>
 
-[^7]: XGBoost 2020,xgboost developers, XGBoost, [online] Available at: <https://xgboost.readthedocs.io>
+[^7]: Kaggle 2018,Kaggle, Google Analytics Customer Revenue Prediction, [online] Available at: <https://www.kaggle.com/c/ga-customer-revenue-prediction/data>
 
-[^8]: Datacamp,2019,Pathak, Using XGBoost in Python, [online] Available at: <https://www.datacamp.com/community/tutorials/xgboost-in-python>
+[^8]: XGBoost 2020,xgboost developers, XGBoost, [online] Available at: <https://xgboost.readthedocs.io>
 
-[^9]: Towards Datascience,2017,Lutins, Ensemble Methods in Machine Learning, [online] Available at: <https://towardsdatascience.com/ensemble-methods-in-machine-learning-what-are-they-and-why-use-them-68ec3f9fef5f>
+[^9]: Datacamp,2019,Pathak, Using XGBoost in Python, [online] Available at: <https://www.datacamp.com/community/tutorials/xgboost-in-python>
 
-[^10]: Machine Learning Mastery,2016,Brownlee, Linear Regression Model, [online] Available at: <https://machinelearningmastery.com/linear-regression-for-machine-learning>
+[^10]: Towards Datascience,2017,Lutins, Ensemble Methods in Machine Learning, [online] Available at: <https://towardsdatascience.com/ensemble-methods-in-machine-learning-what-are-they-and-why-use-them-68ec3f9fef5f>
 
-[^11]: Kaggle 2018,Lee, Google Analytics Customer Revenue Prediction, [online] Available at: <https://www.kaggle.com/youhanlee/which-encoding-is-good-for-time-validation-1-4417>
+[^11]: Machine Learning Mastery,2016,Brownlee, Linear Regression Model, [online] Available at: <https://machinelearningmastery.com/linear-regression-for-machine-learning>
 
-[^12]: Kaggle 2018,Daniel, Google Analytics Customer Revenue Prediction, [online] Available at: <https://www.kaggle.com/fabiendaniel/lgbm-starter>
+[^12]: Kaggle 2018,Lee, Google Analytics Customer Revenue Prediction, [online] Available at: <https://www.kaggle.com/youhanlee/which-encoding-is-good-for-time-validation-1-4417>
+
+[^13]: Kaggle 2018,Daniel, Google Analytics Customer Revenue Prediction, [online] Available at: <https://www.kaggle.com/fabiendaniel/lgbm-starter>
 
 
 
