@@ -316,7 +316,7 @@ The Online GStore customer revenue prediction problem is a Kaggle competition wi
 
 [^5]: Datacamp,2019,Oleszak, Regularization: Ridge, Lasso and Elastic Net, [online] Available at: <https://www.datacamp.com/community/tutorials/tutorial-ridge-lasso-elastic-net>
 
-[^6]: Medium 2017,Mandot, What is LightGBM, [online] Available at: <https://medium.com/@pushkarmandot/https-medium-com-pushkarmandot-what-is-lightgbm-how-to-implement-it-how-to-fine-tune-the-parameters-60347819b7fc>
+[^6]: Medium 2017,Mandot, What is LightGBM,[online] Available at: <https://medium.com/@pushkarmandot/https-medium-com-pushkarmandot-what-is-lightgbm-how-to-implement-it-how-to-fine-tune-the-parameters-60347819b7fc>
 
 [^7]: Kaggle 2018,Kaggle, Google Analytics Customer Revenue Prediction, [online] Available at: <https://www.kaggle.com/c/ga-customer-revenue-prediction/data>
 
