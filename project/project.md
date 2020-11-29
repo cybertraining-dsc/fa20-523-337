@@ -71,7 +71,7 @@ The metrics used for evaluation in this analysis is the root mean squared error 
 
 RMSE is defined as:
 
-![Figure 1.1](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/loss.png)  
+![Figure 1.1](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/loss.png)
 
 **Figure 1:** RMSE
 
@@ -121,7 +121,7 @@ The dataset obtained for this project is large.  It had contained over 900k reco
 		
 **GeoNetwork-City:** Mountain View, California tops the cities list for the users who accessed online store. However in the top 10 cities, 4 cities are from California. 
 		
-![GeoNetwork-City](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/geo_network_city.png)  
+![GeoNetwork-City](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/geo_network_city.png)
 				
 **Figure 7:** GeoNetwork City	
 		
@@ -187,7 +187,7 @@ In the exploration, SKLearn Linear Regression performed well overall. We used 5 
 #### 3.5.2 XGBoost Regressor
 
 XGBoost regression is a gradient boosting regression technique and one of the popular gradient boosting frameworks that exists today. It follows the ensemble principle where a collection of weak learners improves the prediction accuracy. The prediction in the current step S is weighed based on the outcomes from the previous step S-1. Weak learning is slightly better than random learning and that is one of the key strengths of gradient boosting technique. The XGBoost algorithm was explored for this project for several reasons including it offers built-in regularization that helps avoid overfitting, it can handle missing values effectively and it also does cross validation automatically. The feature space for the dataset that we are using is sparse and believe the potential to overfit the data is high which is one of the primary reasons for exploring XGBoost.
-    
+
 XGBoost Linear Regression performed very well. It was our top performing model with the lowest RMSE error of 1.619. Also the training and test scores are reasonably close and it doesn't look like there was the problem of over fitting the training data. We tested multiple rounds with different parameters, this was the best performing model overall. 
 		
 ![XGBoost](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/xgboost3new.png)
@@ -198,7 +198,7 @@ XGBoost Linear Regression performed very well. It was our top performing model w
 
 LightGBM is a popular gradient boosting framework similar to XGBoost and is gaining popularity in the recent days. The important difference between lightGBM and other gradient boosting frameworks is that LightGBM grows the tree vertically or in other words it grows the tree leafwise compared to other frameworks where the trees grow horizontally. In this project the lightGBM framework was experimented primarily because this framework works well on large dataset with more than 10K observations. The algorithm also has a high throughput while using reasonably less memory but there is one problem with overfitting the data which we have controlled in our exploration using appropriate hyper parameter setting and optimized the performance.
 
-LightGBM Regression was the second best performing model in terms of RMSE Scores.  Also the training and test scores seems to be little different and so might have produce overfitting. I tested multiple rounds with different parameters, this was the best performing model overall.  
+LightGBM Regression was the second best performing model in terms of RMSE Scores.  Also the training and test scores seems to be little different and so might have produce overfitting. I tested multiple rounds with different parameters, this was the best performing model overall.
 	
 ![lightgbm](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/lighgbm3new.png)
 	
