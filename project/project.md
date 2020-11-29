@@ -214,7 +214,7 @@ XGBoost regression is a gradient boosting regression technique and one of the po
     
 XGBoost Linear Regression performed very well. It was our top performing model with the lowest RMSE error of 1.619. Also the training and test scores are reasonably close and it doesn't look like there was the problem of overfitting the training data. We tested multiple rounds with different parameters, this was the best performing model overall. 
 		
-![XGBoost](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/xgboost2.png)
+![XGBoost](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/xgboost3.png)
 	
 **Figure 13:** XGBoost Model 	
 	
@@ -224,7 +224,7 @@ LightGBM is a popular gradient boosting framework similar to XGBoost and is gain
 
 LightGBM Regression was the second best performing model interms of RMSE Scores.  Also the training and test scores seems to be little different and so might have produce overfitting. I tested multiple rounds with different parameters, this was the best performing model overall.  
 	
-![lightgbm](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/lightgbm1.png)
+![lightgbm](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/lightgbm3.png)
 	
 **Figure 14:** LightGBM Model 
 	
@@ -236,7 +236,7 @@ In this project, Lasso is one of the important techniques that was explored prim
 
 Lasso performed a bit better than baseline model. However, XGBoost seemed to have performed better than Lasso
 	
-![lasso](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/lasso1.png)
+![lasso](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/lasso3.png)
 	
 **Figure 15:** Lasso Model 
 
@@ -246,7 +246,7 @@ Ridge is a regression technique that uses L2 regularization. Ridge regression do
 
 In this project, Ridge regression is one of the important techniques that was explored again primarily because the problem being solved is a regression problem and there is possibility to overfit the data due to the number of observations and feature space. As a team, we explored different ranges for regularization penalty and identified the appropriate value that helped achieve maximum reduction in the total rmse score. Ridge performed a bit better than baseline model. However, XGBoost seemed to have performed better than Ridge
 	
-![Ridge](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/ridge1.png)
+![Ridge](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/ridge3.png)
 	
 **Figure 16:** Ridge Model 
 
@@ -293,7 +293,7 @@ In the case of XGBoost, there was improvement to the rmse score as different tre
 
 We also performed feature engineering in this dataset to get more predicitve value out of the features and built a pipeline, so it can be easily fed into different models. We tested five different models, such as, Linear Regression, XGBoost, Light GBM, Lasso and Ridge. The summary of all the models is shown below for your reference:
 
-![Model_Results](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/model_results_new.png)
+![Model_Results](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/model_results_new2.png)
 
 **Figure 17:** Model Results Summary 
 
