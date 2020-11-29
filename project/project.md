@@ -27,7 +27,7 @@ Status: in progress
   * Kaggle - Customer Revenue Prediction
 
   is not a full sentence and must not be used to start a section
-  
+
 Balaji Dhamodharan, bdhamodh@iu.edu, fa20-523-337
 Anantha Janakiraman, ajanakir@iu.edu, fa20-523-351
 
