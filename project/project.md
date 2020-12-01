@@ -171,7 +171,7 @@ Feature Selection like Feature Engineering is more of an art than science. There
 
 In this project, the features that had constant variance in the data were dropped and also the features that had mostly null values with only one Non-null value were dropped too. These features do not possess any statistical significance and add very less value to the modeling process. Also, depending on the final result, different techniques and strategies can be explored to optimize and improve the performance of the model.
 
-Prepare the data
+#### 3.4.1 Data Preparation
 
 Scikit learn has inbuilt libraries to handle Train/Test Split as part the model_selection package. The dataset was split randomly with 80% Training and 20% Testing datasets. 
 
