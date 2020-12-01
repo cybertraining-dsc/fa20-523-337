@@ -77,7 +77,7 @@ RMSE is defined as:
 
 where y-hat is the natural log of the predicted revenue for a customer and y is the natural log of the actual summed revenue value plus one as seen in Figure-1.
 
-## 2.2 Source Code
+### 2.2 Source Code
 
 This is the [link](https://github.com/cybertraining-dsc/fa20-523-337/blob/main/project/code/project.ipynb) to the source code for subsequent sections in this report.
 
