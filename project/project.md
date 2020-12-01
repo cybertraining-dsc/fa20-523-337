@@ -231,6 +231,12 @@ In this project, Ridge regression is one of the important techniques that was ex
 	
 **Figure 16:** Ridge Model 
 
+## 4. Benchmark Results
+
+![Benchmark](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/benchmark1.png)
+
+**Figure 17:** Benchmark Results 
+
 ## 5. Software Technologies
 
 In this project tools like Python and Google Colab Jupyter Notebook were used. Also several Python packages were employed in this exploration such as Pandas, Numpy, Matplotlib, sklearn
@@ -255,7 +261,7 @@ In the case of XGBoost, there was improvement to the RMSE score as different tre
 
 ![Model_Results](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/model_results_new2new.png)
 
-**Figure 17:** Model Results Summary 
+**Figure 18:** Model Results Summary 
 
 ### 6.4 Limitations
 
