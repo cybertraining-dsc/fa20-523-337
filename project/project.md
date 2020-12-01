@@ -79,7 +79,7 @@ where y-hat is the natural log of the predicted revenue for a customer and y is 
 
 ### 2.2 Source Code
 
-This is the [link](https://github.com/cybertraining-dsc/fa20-523-337/blob/main/project/code/project.ipynb) to the source code for subsequent sections in this report.
+Follow this [link](https://github.com/cybertraining-dsc/fa20-523-337/blob/main/project/code/project.ipynb) to the source code for subsequent sections in this report.
 
 
 ## 3. Methodology
