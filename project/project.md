@@ -2,7 +2,7 @@
 
 [![Check Report](https://github.com/cybertraining-dsc/fa20-523-337/workflows/Check%20Report/badge.svg)](https://github.com/cybertraining-dsc/fa20-523-337/actions)
 [![Status](https://github.com/cybertraining-dsc/fa20-523-337/workflows/Status/badge.svg)](https://github.com/cybertraining-dsc/fa20-523-337/actions)
-Status: in progress
+Status: final
 - [x] please follow our template
 - [x] Please add references - Facing issues with adding reference. Need assistance
 - [x] Please correct the images with correct markdown syntax. 
@@ -16,7 +16,7 @@ Status: in progress
 - [x] use grammerly
 - [x] your tables are unreadable. There are different ways on how to do this. You can include the parameters as text and the rest as markdown table
 - [x] hid from second author wrong
-- [ ] you are not looking at the output of the check report script some errors are listed there
+- [x] you are not looking at the output of the check report script some errors are listed there
 - [x] the word below and above must never be used in a formal paper to refer to figures and tables and sections, use numbers as we posted in piszza
 - [x] bullet lists must not be used in substitution for subsections. You could **bf**. them and do not use a bullet similar to LaTeX paragraphs if you do not want to use subsections.SUbsections show up in the TOC, **bf**. does not
 - [x] no explanation is provided what the different regression are, no citations provided
@@ -233,6 +233,8 @@ In this project, Ridge regression is one of the important techniques that was ex
 
 ## 4. Benchmark Results
 
+There are some interesting observations from the benchmark results seen in Figure-17. As expected, the data exploration and pre-processing performed very well and the data load and flattening of JSON took only a few hundred milliseconds on a platform like Google Colab compared to more than a minute running the same code locally on a desktop. The grid search for linear regression as expected took more time than the grid search for regularization techniques which is an interesting finding. The model training phase using ridge regression took only half the time approximately 250 seconds compared to 811 seconds for lasso regression. The highest training time of approximately 1800 seconds was recorded with XGBoost regressor and although the original assumption was that this modeling technique would consume time and significant system resources to complete the training process, the total time of 1800 seconds was certainly in the higher end. But, considering the fact that random forest regressor took more than 90 minutes to complete the training process during the experimentation phase, XGBoost performed much better than random forest. The other interesting observation was between LightGBM and XGBoost where LightGBM took significantly less time than XGBoost regressor and if performance and high availability are key considerations during operationalization with slight compromise on model performance then LightGBM would be an ideal candidate for real time operationalization.
+
 ![Benchmark](https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/benchmark1.png)
 
 **Figure 17:** Benchmark Results 
@@ -271,7 +273,12 @@ Due to the limited capacity of our Colab Notebook setup, there was difficulty in
 
 The Online GStore customer revenue prediction problem is a Kaggle competition with more than 4100 entries. It is one of the popular challenges in Kaggle with a prize money of $45,000. Although the goal was not to make it to the top in the leader board, the challenge gave a huge opportunity to explore different methods, techniques, tools and resources. The one important difference between many of the previous of explorations versus what has been achieved in this exploration is the number of different machine learning algorithms that was explored and the performance for each of those different techniques were examined. Based on review of several submissions in Kaggle there were only a very few kernel entries that explored different parameter settings and making intuitive adjustments to them to make the model perform at an optimum level like what has been accomplished in this project. The other uniqueness that was brought to this submission was identifying techniques that offered good performance and consumed less system resources in terms of operationalization. There is lot of scope to continue exploration and attempt other techniques to identify the best performing model.
 
-## 8. References
+## 8. Acknowlegements
+
+The team would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and the other instructors in the Big Data Applications course for their guidance and support through the course of this project and advise on documenting the results of various explorations. 
+
+
+## 9. References
 
 [^1]: Kaggle Competition,2019,Predict the Online Store Revenue,[online] Available at: <https://www.kaggle.com/c/ga-customer-revenue-prediction/rules>
 
