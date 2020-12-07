@@ -2,7 +2,8 @@
 
 [![Check Report](https://github.com/cybertraining-dsc/fa20-523-337/workflows/Check%20Report/badge.svg)](https://github.com/cybertraining-dsc/fa20-523-337/actions)
 [![Status](https://github.com/cybertraining-dsc/fa20-523-337/workflows/Status/badge.svg)](https://github.com/cybertraining-dsc/fa20-523-337/actions)
-Status: final
+Status: final, Type: Project
+
 - [x] please follow our template
 - [x] Please add references - Facing issues with adding reference. Need assistance
 - [x] Please correct the images with correct markdown syntax. 
