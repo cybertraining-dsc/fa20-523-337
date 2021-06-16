@@ -1,33 +1,18 @@
-# Online Store Customer Revenue Prediction
+---
+date: 2021-03-15
+title: Online Store Customer Revenue Prediction
+linkTitle: Revenue Prediction
+tags: ["project", "ai", "finance"]
+description: Online Store Customer Revenue Prediction
+author: Balaji Dhamodharan, Anantha Janakiraman
+resources:
+- src: "**.{png,jpg}"
+  title: "Image #:counter"
+---
 
 [![Check Report](https://github.com/cybertraining-dsc/fa20-523-337/workflows/Check%20Report/badge.svg)](https://github.com/cybertraining-dsc/fa20-523-337/actions)
 [![Status](https://github.com/cybertraining-dsc/fa20-523-337/workflows/Status/badge.svg)](https://github.com/cybertraining-dsc/fa20-523-337/actions)
 Status: final, Type: Project
-
-- [x] please follow our template
-- [x] Please add references - Facing issues with adding reference. Need assistance
-- [x] Please correct the images with correct markdown syntax. 
-- [x] usage of italic vs quotes
-- [x] wrong indentation level when doing lists, student does not do markdown
-- [x] wrong indentation while using paragraphs they must not be indented
-- [x] wrong indentation when using images, images must not be in bullet lists but stands long, images must be refered to in text as Figure x
-- [x] missing empty line before captions
-- [x] future considerations should be renamed to Limitations. 
-- [x] there are no : in headers such as in future considerations:
-- [x] use grammerly
-- [x] your tables are unreadable. There are different ways on how to do this. You can include the parameters as text and the rest as markdown table
-- [x] hid from second author wrong
-- [x] you are not looking at the output of the check report script some errors are listed there
-- [x] the word below and above must never be used in a formal paper to refer to figures and tables and sections, use numbers as we posted in piszza
-- [x] bullet lists must not be used in substitution for subsections. You could **bf**. them and do not use a bullet similar to LaTeX paragraphs if you do not want to use subsections.SUbsections show up in the TOC, **bf**. does not
-- [x] no explanation is provided what the different regression are, no citations provided
-- [x] all figures must have captions (below)
-- [x] all tables must have captions (above)
-- [x] This is not a ppt presentations. for example
-
-  * Kaggle - Customer Revenue Prediction
-
-  is not a full sentence and must not be used to start a section
 
 Balaji Dhamodharan, bdhamodh@iu.edu, fa20-523-337
 Anantha Janakiraman, ajanakir@iu.edu, fa20-523-351
