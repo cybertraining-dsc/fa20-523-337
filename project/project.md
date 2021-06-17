@@ -5,6 +5,7 @@ linkTitle: Revenue Prediction
 tags: ["project", "ai", "finance"]
 description: Online Store Customer Revenue Prediction
 author: Balaji Dhamodharan, Anantha Janakiraman
+github_url: https://github.com/cybertraining-dsc/fa20-523-337/edit/main/project/project.md
 resources:
 - src: "**.{png,jpg}"
   title: "Image #:counter"
